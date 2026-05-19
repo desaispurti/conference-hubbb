@@ -1,6 +1,6 @@
 import { Link, NavLink as RouterNavLink, useLocation } from "react-router-dom";
 import { useState, useEffect } from "react";
-import { Menu, X, ChevronDown, GraduationCap } from "lucide-react";
+import { Menu, X, ChevronDown, Atom } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import {
   DropdownMenu,
@@ -9,25 +9,21 @@ import {
   DropdownMenuTrigger,
 } from "@/components/ui/dropdown-menu";
 
-const primaryNav = [
-  { label: "Home", to: "/" },
+const mainNav = [
   { label: "Upcoming Conferences", to: "/upcoming-conferences" },
-  { label: "Innovation Challenge 2026", to: "/innovation-challenge-2026" },
+  { label: "Recent Conferences", to: "/recent-conferences" },
+  { label: "Past Speakers", to: "/past-speakers" },
+  { label: "Proceedings", to: "/recent-proceedings" },
+  { label: "Innovation Challenge", to: "/innovation-challenge-2026" },
+];
+
+const dropdownNav = [
+  { label: "Proceedings", to: "/recent-proceedings" },
+  { label: "Innovation Challenge", to: "/innovation-challenge-2026" },
+  { label: "Apply as Reviewer", to: "/apply-reviewer" },
+  { label: "Join Advisory Team", to: "/apply-advisory" },
   { label: "Books", to: "/books" },
   { label: "Blog", to: "/blog" },
-];
-
-const conferencesMenu = [
-  { label: "Recent Conferences", to: "/recent-conferences" },
-  { label: "Conference Proceedings", to: "/recent-proceedings" },
-  { label: "Past Speakers", to: "/past-speakers" },
-  { label: "Advisory Speakers", to: "/advisory-speakers" },
-];
-
-const involvedMenu = [
-  { label: "Registration", to: "/registration" },
-  { label: "Apply as Reviewer", to: "/apply-reviewer" },
-  { label: "Advisory Team", to: "/apply-advisory" },
   { label: "Careers", to: "/careers" },
 ];
 
@@ -45,76 +41,56 @@ export const Header = () => {
 
   useEffect(() => setOpen(false), [location.pathname]);
 
-  const linkCls = ({ isActive }: { isActive: boolean }) =>
-    `text-sm font-medium transition-smooth hover:text-accent ${
-      isActive ? "text-accent" : "text-primary-foreground/90"
-    }`;
+  const isHome = location.pathname === "/";
+  const textColor = isHome && !scrolled ? "text-white/90" : "text-foreground/90";
+  const iconColor = isHome && !scrolled ? "text-white" : "text-foreground";
 
   return (
     <header
-      className={`fixed top-0 inset-x-0 z-50 transition-smooth ${
-        scrolled ? "gradient-hero shadow-elegant" : "bg-primary/95 backdrop-blur"
+      className={`fixed top-0 inset-x-0 z-50 transition-all duration-300 ${
+        scrolled ? "bg-background/80 backdrop-blur-xl border-b border-border/50 shadow-elegant" : "bg-transparent py-2"
       }`}
     >
       <div className="container flex h-20 items-center justify-between">
-        <Link to="/" className="flex items-center gap-2 group">
-          <div className="h-10 w-10 rounded-lg gradient-gold flex items-center justify-center shadow-gold">
-            <GraduationCap className="h-5 w-5 text-accent-foreground" />
+        <Link to="/" className="flex items-center gap-3 group">
+          <div className="h-12 w-12 rounded-full overflow-hidden flex items-center justify-center bg-white shadow-gold transition-transform group-hover:scale-105 shrink-0 border border-white/10 p-0.5">
+            <img src="https://media.licdn.com/dms/image/v2/D4D0BAQFzrllKGZyfmg/company-logo_200_200/B4DZlYrBUuJcAI-/0/1758129300108/eminsphere_global_academic_services_logo?e=2147483647&v=beta&t=s0XQXTV_ZMK77OBUqHGaMXi8N-kWg-c0XIAFwBZe_ls" alt="Eminsphere Logo" className="h-full w-full object-contain rounded-full" />
           </div>
           <div className="leading-tight">
-            <div className="font-serif text-lg text-primary-foreground">Confluence</div>
-            <div className="text-[10px] uppercase tracking-widest text-accent">Global Conferences</div>
+            <div className={`font-serif font-black text-xl tracking-tight ${textColor.replace('/90', '')}`}>Eminsphere™</div>
+            <div className="text-[9px] uppercase tracking-widest text-accent font-bold">Research & Innovation</div>
           </div>
         </Link>
 
-        <nav className="hidden lg:flex items-center gap-7">
-          {primaryNav.slice(0, 3).map((l) => (
-            <RouterNavLink key={l.to} to={l.to} className={linkCls}>
+        <nav className="hidden md:flex items-center gap-5 lg:gap-7">
+          {mainNav.map((l) => (
+            <RouterNavLink key={l.to} to={l.to} className={({ isActive }) => `text-[13px] font-bold tracking-wide transition-smooth hover:text-accent whitespace-nowrap ${isActive ? "text-accent" : textColor}`}>
               {l.label}
             </RouterNavLink>
           ))}
 
           <DropdownMenu>
-            <DropdownMenuTrigger className="flex items-center gap-1 text-sm font-medium text-primary-foreground/90 hover:text-accent transition-smooth outline-none">
-              Conferences <ChevronDown className="h-4 w-4" />
+            <DropdownMenuTrigger className={`flex items-center gap-1 text-[13px] font-bold tracking-wide hover:text-accent transition-smooth outline-none whitespace-nowrap ${textColor}`}>
+              More <ChevronDown className="h-3 w-3" />
             </DropdownMenuTrigger>
-            <DropdownMenuContent align="start" className="w-56">
-              {conferencesMenu.map((m) => (
-                <DropdownMenuItem key={m.to} asChild>
-                  <Link to={m.to}>{m.label}</Link>
+            <DropdownMenuContent align="end" className="w-56 bg-card/95 backdrop-blur-xl border-border/10 shadow-elegant rounded-xl">
+              {dropdownNav.map((m) => (
+                <DropdownMenuItem key={m.to} asChild className="focus:bg-muted focus:text-accent cursor-pointer rounded-lg mx-1 my-1">
+                  <Link to={m.to} className="text-foreground font-medium">{m.label}</Link>
                 </DropdownMenuItem>
               ))}
             </DropdownMenuContent>
           </DropdownMenu>
-
-          <DropdownMenu>
-            <DropdownMenuTrigger className="flex items-center gap-1 text-sm font-medium text-primary-foreground/90 hover:text-accent transition-smooth outline-none">
-              Get Involved <ChevronDown className="h-4 w-4" />
-            </DropdownMenuTrigger>
-            <DropdownMenuContent align="start" className="w-56">
-              {involvedMenu.map((m) => (
-                <DropdownMenuItem key={m.to} asChild>
-                  <Link to={m.to}>{m.label}</Link>
-                </DropdownMenuItem>
-              ))}
-            </DropdownMenuContent>
-          </DropdownMenu>
-
-          {primaryNav.slice(3).map((l) => (
-            <RouterNavLink key={l.to} to={l.to} className={linkCls}>
-              {l.label}
-            </RouterNavLink>
-          ))}
         </nav>
 
-        <div className="hidden lg:block">
-          <Button asChild variant="hero" size="sm">
+        <div className="hidden md:block">
+          <Button asChild className="bg-[#0099cc] text-white hover:bg-[#0099cc]/90 rounded-full font-black px-8 shadow-[0_0_20px_rgba(0,153,204,0.3)] transition-all duration-300 hover:scale-105 uppercase tracking-wider text-sm h-12">
             <Link to="/registration">Register Now</Link>
           </Button>
         </div>
 
         <button
-          className="lg:hidden text-primary-foreground"
+          className={`md:hidden hover:text-accent transition-colors ${iconColor}`}
           onClick={() => setOpen(!open)}
           aria-label="Toggle menu"
         >
@@ -123,19 +99,20 @@ export const Header = () => {
       </div>
 
       {open && (
-        <div className="lg:hidden gradient-hero border-t border-primary-foreground/10 animate-fade-in">
-          <div className="container py-6 flex flex-col gap-1 max-h-[80vh] overflow-y-auto">
-            {[...primaryNav, ...conferencesMenu, ...involvedMenu].map((l) => (
+        <div className="md:hidden bg-card/95 backdrop-blur-xl border-t border-white/10 animate-fade-in shadow-elegant">
+          <div className="container py-6 flex flex-col gap-2 max-h-[80vh] overflow-y-auto">
+            {[...mainNav, ...dropdownNav].map((l) => (
               <Link
                 key={l.to}
                 to={l.to}
-                className="py-3 px-3 rounded-md text-primary-foreground hover:bg-primary-foreground/10 transition-smooth"
+                className="py-3 px-4 rounded-xl text-white font-medium hover:bg-white/10 hover:text-accent transition-smooth"
+                onClick={() => setOpen(false)}
               >
                 {l.label}
               </Link>
             ))}
-            <Button asChild variant="hero" className="mt-3">
-              <Link to="/registration">Register Now</Link>
+            <Button asChild className="mt-4 bg-[#0099cc] text-white rounded-xl h-12 font-black w-full uppercase tracking-wider">
+              <Link to="/registration" onClick={() => setOpen(false)}>Register Now</Link>
             </Button>
           </div>
         </div>

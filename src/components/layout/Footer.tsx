@@ -1,70 +1,69 @@
 import { Link } from "react-router-dom";
-import { GraduationCap, Mail, MapPin, Phone, Linkedin, Twitter, Facebook, Youtube } from "lucide-react";
+import { Mail, Linkedin, Youtube } from "lucide-react";
 
 export const Footer = () => {
   return (
-    <footer className="gradient-hero text-primary-foreground mt-24">
+    <footer className="bg-card border-t border-border/50 text-foreground mt-24">
       <div className="container py-16 grid gap-12 md:grid-cols-2 lg:grid-cols-4">
         <div>
-          <Link to="/" className="flex items-center gap-2 mb-5">
-            <div className="h-10 w-10 rounded-lg gradient-gold flex items-center justify-center">
-              <GraduationCap className="h-5 w-5 text-accent-foreground" />
+          <Link to="/" className="flex items-center gap-3 mb-6 group">
+            <div className="h-12 w-12 rounded-full overflow-hidden flex items-center justify-center bg-white shadow-gold transition-transform group-hover:scale-105 shrink-0 border border-white/10 p-0.5">
+              <img src="https://media.licdn.com/dms/image/v2/D4D0BAQFzrllKGZyfmg/company-logo_200_200/B4DZlYrBUuJcAI-/0/1758129300108/eminsphere_global_academic_services_logo?e=2147483647&v=beta&t=s0XQXTV_ZMK77OBUqHGaMXi8N-kWg-c0XIAFwBZe_ls" alt="Eminsphere Logo" className="h-full w-full object-contain rounded-full" />
             </div>
             <div className="leading-tight">
-              <div className="font-serif text-lg">Confluence</div>
-              <div className="text-[10px] uppercase tracking-widest text-accent">Global Conferences</div>
+              <div className="font-serif font-black text-xl text-foreground tracking-tight">Eminsphere™</div>
+              <div className="text-[9px] uppercase tracking-widest text-accent font-bold">Research & Innovation</div>
             </div>
           </Link>
-          <p className="text-sm text-primary-foreground/70 leading-relaxed">
+          <p className="text-sm text-muted-foreground leading-relaxed">
             Connecting researchers, innovators, and visionaries through world-class
             international conferences and academic publishing.
           </p>
-          <div className="flex gap-3 mt-5">
-            {[Linkedin, Twitter, Facebook, Youtube].map((Icon, i) => (
-              <a key={i} href="#" className="h-9 w-9 rounded-full bg-primary-foreground/10 hover:bg-accent hover:text-accent-foreground flex items-center justify-center transition-smooth">
-                <Icon className="h-4 w-4" />
-              </a>
-            ))}
+          <div className="flex gap-3 mt-6">
+            <a href="https://www.linkedin.com/company/106142250/admin/dashboard/" target="_blank" rel="noopener noreferrer" className="h-10 w-10 rounded-full bg-muted hover:bg-primary hover:text-primary-foreground flex items-center justify-center transition-smooth shadow-sm hover:shadow-gold hover:-translate-y-1">
+              <Linkedin className="h-4 w-4" />
+            </a>
+            <a href="https://www.youtube.com/@Eminsphere" target="_blank" rel="noopener noreferrer" className="h-10 w-10 rounded-full bg-muted hover:bg-[#0099cc] hover:text-white flex items-center justify-center transition-smooth shadow-sm hover:shadow-gold hover:-translate-y-1">
+              <Youtube className="h-4 w-4" />
+            </a>
           </div>
         </div>
 
         <div>
-          <h4 className="font-serif text-base mb-4 text-accent">Conferences</h4>
-          <ul className="space-y-2 text-sm text-primary-foreground/80">
-            <li><Link to="/upcoming-conferences" className="hover:text-accent">Upcoming</Link></li>
-            <li><Link to="/recent-conferences" className="hover:text-accent">Recent</Link></li>
-            <li><Link to="/recent-proceedings" className="hover:text-accent">Proceedings</Link></li>
-            <li><Link to="/innovation-challenge-2026" className="hover:text-accent">Innovation Challenge</Link></li>
+          <h4 className="font-sans font-bold text-base mb-5 text-foreground">Conferences</h4>
+          <ul className="space-y-3 text-sm text-muted-foreground">
+            <li><Link to="/upcoming-conferences" className="hover:text-accent transition-colors">Upcoming</Link></li>
+            <li><Link to="/recent-conferences" className="hover:text-accent transition-colors">Recent</Link></li>
+            <li><Link to="/recent-proceedings" className="hover:text-accent transition-colors">Proceedings</Link></li>
+            <li><Link to="/innovation-challenge-2026" className="hover:text-accent transition-colors">Innovation Challenge</Link></li>
           </ul>
         </div>
 
         <div>
-          <h4 className="font-serif text-base mb-4 text-accent">Get Involved</h4>
-          <ul className="space-y-2 text-sm text-primary-foreground/80">
-            <li><Link to="/registration" className="hover:text-accent">Registration</Link></li>
-            <li><Link to="/apply-reviewer" className="hover:text-accent">Apply as Reviewer</Link></li>
-            <li><Link to="/apply-advisory" className="hover:text-accent">Advisory Team</Link></li>
-            <li><Link to="/careers" className="hover:text-accent">Careers</Link></li>
+          <h4 className="font-sans font-bold text-base mb-5 text-foreground">Get Involved</h4>
+          <ul className="space-y-3 text-sm text-muted-foreground">
+            <li><Link to="/registration" className="hover:text-accent transition-colors">Registration</Link></li>
+            <li><Link to="/apply-reviewer" className="hover:text-accent transition-colors">Apply as Reviewer</Link></li>
+            <li><Link to="/apply-advisory" className="hover:text-accent transition-colors">Advisory Team</Link></li>
+            <li><Link to="/careers" className="hover:text-accent transition-colors">Careers</Link></li>
           </ul>
         </div>
 
         <div>
-          <h4 className="font-serif text-base mb-4 text-accent">Contact</h4>
-          <ul className="space-y-3 text-sm text-primary-foreground/80">
-            <li className="flex gap-2"><MapPin className="h-4 w-4 text-accent shrink-0 mt-0.5" /> Global HQ, Worldwide</li>
-            <li className="flex gap-2"><Mail className="h-4 w-4 text-accent shrink-0 mt-0.5" /> info@confluence.org</li>
-            <li className="flex gap-2"><Phone className="h-4 w-4 text-accent shrink-0 mt-0.5" /> +1 (000) 000-0000</li>
+          <h4 className="font-sans font-bold text-base mb-5 text-foreground">Contact</h4>
+          <ul className="space-y-4 text-sm text-muted-foreground">
+            <li className="flex gap-3 items-center"><Mail className="h-4 w-4 text-accent shrink-0" /> <a href="mailto:info@eminsphere.com" className="hover:text-accent transition-colors">info@eminsphere.com</a></li>
           </ul>
         </div>
       </div>
 
-      <div className="border-t border-primary-foreground/10">
-        <div className="container py-6 flex flex-col md:flex-row justify-between items-center gap-3 text-xs text-primary-foreground/60">
-          <p>© {new Date().getFullYear()} Confluence Global Conferences. All rights reserved.</p>
-          <div className="flex gap-5">
-            <a href="#" className="hover:text-accent">Privacy</a>
-            <a href="#" className="hover:text-accent">Terms</a>
-            <a href="#" className="hover:text-accent">Cookies</a>
+      <div className="border-t border-border/50 bg-background/50">
+        <div className="container py-6 flex flex-col md:flex-row justify-between items-center gap-4 text-sm text-muted-foreground font-medium">
+          <p>© {new Date().getFullYear()} Eminsphere™. All rights reserved.</p>
+          <div className="flex gap-6">
+            <a href="#" className="hover:text-accent transition-colors">Privacy</a>
+            <a href="#" className="hover:text-accent transition-colors">Terms</a>
+            <a href="#" className="hover:text-accent transition-colors">Cookies</a>
           </div>
         </div>
       </div>
