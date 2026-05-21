@@ -219,44 +219,80 @@ const ResearchFunding = () => {
       </section>
 
       {/* DEADLINE HIGHLIGHT */}
-      <section className="bg-muted py-24 border-b">
-        <div className="container">
-          <div className="bg-card rounded-[40px] p-10 md:p-16 shadow-elegant text-center relative overflow-hidden border border-border">
-            <div className="absolute top-0 right-0 w-96 h-96 bg-accent/5 rounded-full blur-3xl -translate-y-1/2 translate-x-1/3"></div>
-            <div className="absolute bottom-0 left-0 w-96 h-96 bg-primary/5 rounded-full blur-3xl translate-y-1/2 -translate-x-1/3"></div>
+      <section className="relative py-28 overflow-hidden bg-[#00060c] border-t border-white/5">
+        {/* Background effects */}
+        <div className="absolute -top-40 left-1/2 -translate-x-1/2 w-[800px] h-[500px] bg-[#0099cc]/8 rounded-full blur-[120px] pointer-events-none" />
+        <div className="absolute inset-0 bg-[repeating-linear-gradient(0deg,transparent,transparent_59px,rgba(255,255,255,0.015)_60px),repeating-linear-gradient(90deg,transparent,transparent_59px,rgba(255,255,255,0.015)_60px)] pointer-events-none" />
+
+        <div className="container relative z-10 max-w-5xl">
+
+          {/* Urgency badge */}
+          <div className="flex justify-center mb-8">
+            <div className="inline-flex items-center gap-2 px-5 py-2.5 rounded-full bg-red-500/15 border border-red-500/30 text-red-400 font-bold text-sm uppercase tracking-widest animate-pulse">
+              <Calendar className="h-4 w-4" /> Deadline Approaching
+            </div>
+          </div>
+
+          <div className="text-center mb-12">
+            <h2 className="text-3xl md:text-5xl font-sans font-black text-white mb-5 tracking-tight">
+              Official Submission <span className="text-transparent bg-clip-text bg-gradient-to-r from-[#0099cc] to-[#00e5ff]">Deadline</span>
+            </h2>
+            <p className="text-white/50 text-lg max-w-3xl mx-auto leading-relaxed">
+              All participating institutions, universities, research laboratories, medical organizations, and innovation centers are requested to submit their complete proposals before the official deadline.
+            </p>
+          </div>
+
+          {/* Deadline Card */}
+          <div className="bg-white/[0.03] backdrop-blur-xl border border-white/10 rounded-[2.5rem] p-10 md:p-14 text-center relative overflow-hidden group hover:border-[#0099cc]/30 transition-colors duration-500">
+            {/* Glowing top edge */}
+            <div className="absolute top-0 left-1/2 -translate-x-1/2 w-2/3 h-px bg-gradient-to-r from-transparent via-[#0099cc]/60 to-transparent" />
             
             <div className="relative z-10">
-              <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-red-100 text-red-600 font-bold text-sm tracking-wider uppercase mb-8">
-                <Calendar className="h-4 w-4" /> Important Notification
-              </div>
-              <h2 className="text-3xl md:text-5xl font-serif font-bold text-primary mb-6">Official Submission Deadline</h2>
-              <p className="text-lg text-muted-foreground max-w-3xl mx-auto mb-12">
-                All participating institutions, universities, research laboratories, medical organizations, innovation centers, startups, and industrial entities are requested to submit their complete institutional proposals before the official submission deadline.
-              </p>
+              <div className="text-[#0099cc] font-black tracking-[0.3em] text-xs md:text-sm uppercase mb-8">Final Submission Date</div>
 
-              <div className="inline-block bg-gradient-to-br from-primary to-primary/80 rounded-3xl p-8 md:p-12 text-primary-foreground shadow-2xl relative overflow-hidden group">
-                <div className="absolute inset-0 bg-accent/20 translate-y-full group-hover:translate-y-0 transition-transform duration-500"></div>
-                <div className="relative z-10">
-                  <div className="text-accent font-bold tracking-[0.2em] text-sm md:text-base mb-6">FINAL SUBMISSION DATE</div>
-                  <div className="flex items-start justify-center gap-2 mb-6">
-                    <span className="text-7xl md:text-9xl font-black leading-none">31</span>
-                    <div className="flex flex-col text-left">
-                      <span className="text-2xl md:text-4xl font-bold">ST</span>
-                      <span className="text-4xl md:text-6xl font-black tracking-widest leading-none mt-2">MAY</span>
-                    </div>
-                  </div>
-                  <div className="text-3xl md:text-5xl font-black text-primary-foreground/90 mb-8">2026</div>
-                  <div className="inline-block bg-primary-foreground/10 backdrop-blur-md rounded-full px-6 py-2 text-sm font-semibold border border-primary-foreground/20">
-                    Applications Open • Global Funding Cycle 2026
-                  </div>
+              {/* Date display */}
+              <div className="flex items-center justify-center gap-4 md:gap-6 mb-8">
+                {/* Day */}
+                <div className="bg-[#0099cc]/10 border border-[#0099cc]/25 rounded-2xl px-6 md:px-10 py-5 md:py-7">
+                  <span className="text-6xl md:text-8xl font-black text-white tabular-nums leading-none">31</span>
+                </div>
+                {/* Separator */}
+                <div className="flex flex-col items-center gap-2">
+                  <div className="w-1.5 h-1.5 rounded-full bg-[#0099cc]" />
+                  <div className="w-1.5 h-1.5 rounded-full bg-[#0099cc]" />
+                </div>
+                {/* Month */}
+                <div className="bg-[#0099cc]/10 border border-[#0099cc]/25 rounded-2xl px-6 md:px-10 py-5 md:py-7">
+                  <span className="text-6xl md:text-8xl font-black text-white leading-none tracking-wider">MAY</span>
+                </div>
+                {/* Separator */}
+                <div className="flex flex-col items-center gap-2">
+                  <div className="w-1.5 h-1.5 rounded-full bg-[#0099cc]" />
+                  <div className="w-1.5 h-1.5 rounded-full bg-[#0099cc]" />
+                </div>
+                {/* Year */}
+                <div className="bg-white/5 border border-white/10 rounded-2xl px-5 md:px-8 py-5 md:py-7">
+                  <span className="text-5xl md:text-7xl font-black text-white/70 tabular-nums leading-none">2026</span>
                 </div>
               </div>
-              
-              <p className="text-sm font-medium text-muted-foreground mt-8 max-w-lg mx-auto">
+
+              {/* Status pill */}
+              <div className="inline-flex items-center gap-3 px-6 py-3 rounded-full bg-[#0099cc]/10 border border-[#0099cc]/25 mb-6">
+                <span className="relative flex h-2 w-2">
+                  <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-emerald-400 opacity-75"></span>
+                  <span className="relative inline-flex rounded-full h-2 w-2 bg-emerald-400"></span>
+                </span>
+                <span className="text-white/80 font-semibold text-sm">Applications Open</span>
+                <span className="text-white/30">•</span>
+                <span className="text-[#0099cc] font-bold text-sm">Global Funding Cycle 2026</span>
+              </div>
+
+              <p className="text-white/30 text-xs max-w-md mx-auto mt-6 leading-relaxed">
                 *Late or incomplete submissions may not be considered for evaluation under the current funding cycle.
               </p>
             </div>
           </div>
+
         </div>
       </section>
     </main>
