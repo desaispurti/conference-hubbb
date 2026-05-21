@@ -34,8 +34,14 @@ const ResearchFunding = () => {
             Eminsphere™ invites proposals from Medical Institutes, Universities, Research Organizations, Technology Institutes, Industrial R&D Centers, Innovation Hubs, Healthcare Institutions, and multidisciplinary academic bodies for institutional funding support, collaborative research programs, industrial innovation initiatives, and strategic academic partnerships.
           </p>
           <div className="flex flex-wrap justify-center gap-4 mt-8">
-            <Button size="lg" className="rounded-full shadow-xl px-8 h-14 text-lg">
-              <Download className="mr-2 h-5 w-5" /> Download Official Brochure
+            <Button asChild size="lg" className="rounded-full shadow-xl px-8 h-14 text-lg">
+              <a 
+                href="https://30814e9b-93fd-4fff-a0e3-26e2def43d28.usrfiles.com/ugd/30814e_ec940eedc9944692857c2ab16f5d2cdb.pdf" 
+                target="_blank" 
+                rel="noopener noreferrer"
+              >
+                <Download className="mr-2 h-5 w-5" /> Download Official Brochure
+              </a>
             </Button>
             <Button size="lg" variant="outline" className="rounded-full h-14 px-8 text-lg" onClick={() => document.getElementById('submission')?.scrollIntoView({ behavior: 'smooth' })}>
               Submission Guidelines

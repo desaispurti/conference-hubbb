@@ -20,7 +20,12 @@ const conferenceData = {
     { title: "Diverse Domains", desc: "Engineering, technology, management, environmental sciences, and AI." },
     { title: "Hybrid Mode", desc: "Attend in person in Helsinki, Finland or virtually from anywhere." }
   ],
-  speakers: [],
+  speakers: [
+    { name: "Anup Kagalkar", org: "Product Technical Expert", country: "United States", img: "https://static.wixstatic.com/media/30814e_38bae8e1c58e4626b639ff27e74b615f~mv2.jpeg" },
+    { name: "Hina Shahbaz", org: "Progressive Model College", country: "Spain", img: "https://static.wixstatic.com/media/30814e_1d40f47c75c84e399f11834d905fdfca~mv2.jpeg" },
+    { name: "Aynur Mahmudova", org: "Saipem", country: "Azerbaijan", img: "https://static.wixstatic.com/media/30814e_096b8766915a49b9b4f964848f812618~mv2.jpg" },
+    { name: "BERKANI Samir", org: "University of Bouerdes", country: "Algeria", img: "https://static.wixstatic.com/media/30814e_e76d7e27c8cd48b3845ce3627ec85821~mv2.jpeg" }
+  ],
   tracks: [
     "Engineering & Technology (AI, IoT, Cybersecurity, Smart Systems, Data Engineering)",
     "Business & Management (Digital transformation, sustainability strategies, and global trade)",

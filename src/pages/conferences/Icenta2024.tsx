@@ -21,7 +21,12 @@ const conferenceData = {
     { title: "Industrial-Academic Synergy", desc: "Bridge the gap between academia and industry for real-world applications." },
     { title: "Policy Discussions", desc: "Engage policymakers to drive technology-forward policies for global benefit." }
   ],
-  speakers: [],
+  speakers: [
+    { name: "Abdullah Al Abri", org: "VP Sustainability, Sohar Port", country: "Oman", img: "https://static.wixstatic.com/media/30814e_e4eab5a58c524432a47ca4e3e9afffe0~mv2.jpeg" },
+    { name: "Nikola Ilić", org: "Assistant Professor", country: "Serbia", img: "https://static.wixstatic.com/media/30814e_cf46fb74cc9446b287ec144125a1c54e~mv2.jpeg" },
+    { name: "Osman ARAYICI", org: "Mimar Sinan University", country: "Turkey", img: "https://static.wixstatic.com/media/30814e_f0f7674fd55346bfb2eaba4b48b3d669~mv2.jpeg" },
+    { name: "Prof. Abdel Rahman Alzoubaidi", org: "Al Balqa Applied University", country: "Jordan", img: "https://static.wixstatic.com/media/30814e_e9b1616d369d4f1f8dc784bbb1379fc6~mv2.jpeg" }
+  ],
   tracks: [
     "Artificial Intelligence (AI) & Machine Learning",
     "Internet of Things (IoT) & Industry 4.0",

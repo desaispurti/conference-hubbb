@@ -16,7 +16,7 @@ import ProceedingDetail from "./pages/ProceedingDetail";
 import PastSpeakers from "./pages/PastSpeakers";
 import AdvisorySpeakers from "./pages/AdvisorySpeakers";
 import AdvisoryMembers from "./pages/AdvisoryMembers.tsx";
-import InnovationChallenge from "./pages/InnovationChallenge";
+
 import Registration from "./pages/Registration";
 import ApplyReviewer from "./pages/ApplyReviewer";
 import ApplyAdvisory from "./pages/ApplyAdvisory";
@@ -62,7 +62,7 @@ const App = () => {
             <Route path="/past-speakers" element={<PastSpeakers />} />
             <Route path="/advisory-speakers" element={<AdvisorySpeakers />} />
             <Route path="/advisory-members" element={<AdvisoryMembers />} />
-            <Route path="/innovation-challenge-2026" element={<InnovationChallenge />} />
+
             <Route path="/research-funding" element={<ResearchFunding />} />
             <Route path="/registration" element={<Registration />} />
             <Route path="/apply-reviewer" element={<ApplyReviewer />} />

@@ -14,12 +14,12 @@ const mainNav = [
   { label: "Recent Conferences", to: "/recent-conferences" },
   { label: "Past Speakers", to: "/past-speakers" },
   { label: "Proceedings", to: "/recent-proceedings" },
-  { label: "Innovation Challenge", to: "/innovation-challenge-2026" },
+  { label: "Research Funding", to: "/research-funding" },
 ];
 
 const dropdownNav = [
   { label: "Proceedings", to: "/recent-proceedings" },
-  { label: "Innovation Challenge", to: "/innovation-challenge-2026" },
+  { label: "Research Funding", to: "/research-funding" },
   { label: "Apply as Reviewer", to: "/apply-reviewer" },
   { label: "Join Advisory Team", to: "/apply-advisory" },
   { label: "Books", to: "/books" },

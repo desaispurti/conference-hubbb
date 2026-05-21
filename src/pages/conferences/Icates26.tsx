@@ -19,7 +19,12 @@ const conferenceData = {
     { title: "Web of Science", desc: "Outstanding papers may be submitted to Web of Science indexed journals." },
     { title: "Industry Interaction", desc: "Collaborate with industry leaders and professionals." }
   ],
-  speakers: [],
+  speakers: [
+    { name: "Pearce Korb", org: "Clinical Educator", country: "United States", img: "https://static.wixstatic.com/media/30814e_2c8d6049087942e4842f1d6f434e040e~mv2.jpg" },
+    { name: "Mr. Satish Kabade", org: "Independent Researcher", country: "USA", img: "https://static.wixstatic.com/media/30814e_a31d532fb603465e846aceccb082827c~mv2.jpeg" },
+    { name: "Irandoust-pakchin", org: "University of Tabriz", country: "Iran", img: "https://static.wixstatic.com/media/30814e_105366170c1b4be7995469e3ae42f001~mv2.jpeg" },
+    { name: "Aleksandra Ikonov", org: "Professor", country: "Serbia", img: "https://static.wixstatic.com/media/30814e_ba31cc42a6d34171bc4ac11bf014871e~mv2.jpeg" }
+  ],
   tracks: [
     "Artificial Intelligence & Machine Learning",
     "Robotics & Automation",

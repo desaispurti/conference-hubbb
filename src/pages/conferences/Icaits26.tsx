@@ -32,6 +32,12 @@ const conferenceData = {
     "Best Student Paper Award",
     "Innovation Award"
   ],
+  speakers: [
+    { name: "Kadenova Zuurakan Azhimamatovna", org: "Head of Laboratory", country: "Kyrgyzstan", img: "https://static.wixstatic.com/media/30814e_e8b8b992c26a49cf99035616610f5216~mv2.jpeg" },
+    { name: "Dr. Tiansheng Yang", org: "University of South Wales", country: "United Kingdom", img: "https://static.wixstatic.com/media/30814e_ab0670f34d354ffabafcaa2849d78701~mv2.jpg" },
+    { name: "Jim Saliba", org: "Principal Consultant", country: "San Jose, California", img: "https://static.wixstatic.com/media/30814e_45d1f903e57d425cb88addf2bdbec7be~mv2.jpeg" },
+    { name: "Nomi Khedawala", org: "Sr. Technical Program Manager", country: "San Francisco", img: "https://static.wixstatic.com/media/30814e_4dddbaf5110540e7b8c0d5ed7826a8e5~mv2.jpeg" }
+  ],
   tracks: [
     { title: "AI & Machine Learning", desc: "Deep learning, NLP, intelligent systems." },
     { title: "Software Engineering", desc: "System design, DevOps, architectures." },
