@@ -1,5 +1,5 @@
 import { Link } from "react-router-dom";
-import { useState, useEffect } from "react";
+import { useState, useEffect, useRef } from "react";
 import { Button } from "@/components/ui/button";
 import { Card } from "@/components/ui/card";
 import { Input } from "@/components/ui/input";
@@ -23,7 +23,10 @@ import {
   Globe,
   MapPin,
   Clock,
-  ShieldCheck
+  ShieldCheck,
+  Flame,
+  Bell,
+  Video
 } from "lucide-react";
 import heroImg from "@/assets/hero-conference.jpg";
 import speakersImg from "@/assets/speakers.jpg";
@@ -140,14 +143,36 @@ const recentConferencesData = [
 const rotations = [-3, 2, -1.5, 3, -2, 1, -2.5, 2.5, -1, 3, -3, 1.5, -2, 2];
 
 const upcoming = [
-  { title: "ICCEMB-26: Computer Science, Education & Medical", city: "Online Mode", date: "10 May 2026", topic: "Multidisciplinary", link: "/iccemb-26", img: "https://images.unsplash.com/photo-1518770660439-4636190af475?q=80&w=800&auto=format&fit=crop" },
-  { title: "ICMREF-26: Multidisciplinary Research & AI", city: "Nairobi, Kenya", date: "07 June 2026", topic: "Technology & AI", link: "/icmref-26", img: "https://images.unsplash.com/photo-1576091160399-112ba8d25d1d?q=80&w=800&auto=format&fit=crop" },
-  { title: "ICAITS-26: AI & Intelligent Technology Systems", city: "Virtual Mode", date: "10 May 2026", topic: "AI & Tech", link: "/icaits-26", img: "https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?q=80&w=800&auto=format&fit=crop" },
+  { title: "ICCEMB-26: Computer Science, Education & Medical", city: "Online Mode", date: "31 May 2026", topic: "Multidisciplinary", link: "/iccemb-26", img: "https://images.unsplash.com/photo-1518770660439-4636190af475?q=80&w=800&auto=format&fit=crop" },
+  { title: "ICMREF-26: Multidisciplinary Research & AI", city: "Nairobi, Kenya", date: "14 June 2026", topic: "Technology & AI", link: "/icmref-26", img: "https://images.unsplash.com/photo-1576091160399-112ba8d25d1d?q=80&w=800&auto=format&fit=crop" },
+  { title: "ICAITS-26: AI & Intelligent Technology Systems", city: "Virtual Mode", date: "21 June 2026", topic: "AI & Tech", link: "/icaits-26", img: "https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?q=80&w=800&auto=format&fit=crop" },
 ];
+
+const CONFERENCE_DATE = new Date("2026-05-31T09:00:00+05:30");
+
+function useCountdown(target: Date) {
+  const calc = () => {
+    const diff = target.getTime() - Date.now();
+    if (diff <= 0) return { days: 0, hours: 0, minutes: 0, seconds: 0 };
+    return {
+      days: Math.floor(diff / 86400000),
+      hours: Math.floor((diff % 86400000) / 3600000),
+      minutes: Math.floor((diff % 3600000) / 60000),
+      seconds: Math.floor((diff % 60000) / 1000),
+    };
+  };
+  const [countdown, setCountdown] = useState(calc);
+  useEffect(() => {
+    const t = setInterval(() => setCountdown(calc()), 1000);
+    return () => clearInterval(t);
+  }, []);
+  return countdown;
+}
 
 const Index = () => {
   const [activeConf, setActiveConf] = useState(0);
   const [animKey, setAnimKey] = useState(0);
+  const countdown = useCountdown(CONFERENCE_DATE);
 
   const handleConfSwitch = (idx: number) => {
     if (idx === activeConf) return;
@@ -233,6 +258,125 @@ const Index = () => {
                   <div className="text-[10px] md:text-xs text-white/70 uppercase tracking-[0.2em] font-bold">{s.label}</div>
                 </div>
               ))}
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* ═══════════════════════════════════════════════════════
+           ICCEMB-26 FEATURED CONFERENCE SPOTLIGHT
+      ═══════════════════════════════════════════════════════ */}
+      <section className="relative py-20 overflow-hidden bg-[#00060c] border-t border-white/5">
+        {/* Animated background blobs */}
+        <div className="absolute -top-40 -left-40 w-[600px] h-[600px] bg-[#0099cc]/10 rounded-full blur-[120px] pointer-events-none" />
+        <div className="absolute -bottom-40 -right-40 w-[500px] h-[500px] bg-[#00bfff]/8 rounded-full blur-[100px] pointer-events-none" />
+        <div className="absolute inset-0 bg-[repeating-linear-gradient(0deg,transparent,transparent_59px,rgba(255,255,255,0.02)_60px),repeating-linear-gradient(90deg,transparent,transparent_59px,rgba(255,255,255,0.02)_60px)] pointer-events-none" />
+
+        <div className="container relative z-10 max-w-7xl">
+
+          {/* TOP BADGE */}
+          <div className="flex justify-center mb-10">
+            <div className="inline-flex items-center gap-2 px-5 py-2.5 rounded-full bg-red-500/15 border border-red-500/30 text-red-400 font-bold text-sm uppercase tracking-widest animate-pulse">
+              <Flame className="h-4 w-4" />
+              Most Upcoming · Register Now
+            </div>
+          </div>
+
+          <div className="grid lg:grid-cols-5 gap-10 items-center">
+
+            {/* LEFT — Main info */}
+            <div className="lg:col-span-3">
+              <div className="inline-flex items-center gap-2 text-xs font-bold uppercase tracking-[0.2em] text-[#0099cc] mb-5">
+                <span className="relative flex h-2 w-2">
+                  <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-[#0099cc] opacity-75"></span>
+                  <span className="relative inline-flex rounded-full h-2 w-2 bg-[#0099cc]"></span>
+                </span>
+                ICCEMB-26 · International Conference
+              </div>
+
+              <h2 className="text-3xl md:text-5xl lg:text-[3.5rem] font-sans font-black text-white leading-[1.1] tracking-tight mb-6">
+                International Conference on{" "}
+                <span className="text-transparent bg-clip-text bg-gradient-to-r from-[#0099cc] to-[#00e5ff]">
+                  Computer Science, Education,
+                </span>{" "}
+                Medical &amp; Business
+              </h2>
+
+              <p className="text-white/60 text-lg leading-relaxed mb-8 max-w-2xl">
+                A premier global platform fostering interdisciplinary research across Artificial Intelligence, Education Technologies, Medical Informatics, and Business Intelligence. Join 500+ delegates worldwide for a transformative academic experience.
+              </p>
+
+              {/* Badges row */}
+              <div className="flex flex-wrap gap-3 mb-10">
+                {[
+                  { icon: Calendar, label: "31 May 2026" },
+                  { icon: Video, label: "Online Mode" },
+                  { icon: Globe2, label: "Global Participation" },
+                  { icon: Users, label: "500+ Delegates" },
+                ].map(({ icon: Icon, label }) => (
+                  <div key={label} className="flex items-center gap-2 px-4 py-2 rounded-full bg-white/5 border border-white/10 text-white/80 text-sm font-semibold">
+                    <Icon className="h-4 w-4 text-[#0099cc]" />
+                    {label}
+                  </div>
+                ))}
+              </div>
+
+              {/* CTA Buttons */}
+              <div className="flex flex-wrap gap-4">
+                <Button asChild size="lg" className="bg-[#0099cc] hover:bg-[#0099cc]/90 text-white font-black h-14 px-10 rounded-full shadow-[0_0_30px_rgba(0,153,204,0.4)] hover:shadow-[0_0_40px_rgba(0,153,204,0.6)] hover:-translate-y-1 transition-all duration-300 text-sm uppercase tracking-wider">
+                  <a href="https://forms.gle/u6H8B5cd1KJrJRtQ7" target="_blank" rel="noreferrer">
+                    Register Now <ArrowRight className="ml-2 h-5 w-5" />
+                  </a>
+                </Button>
+                <Button asChild variant="outline" size="lg" className="border-white/20 text-white hover:bg-white/10 h-14 px-10 rounded-full font-bold text-sm uppercase tracking-wider transition-all duration-300">
+                  <Link to="/iccemb-26">
+                    View Full Details
+                  </Link>
+                </Button>
+              </div>
+            </div>
+
+            {/* RIGHT — Countdown + Tracks */}
+            <div className="lg:col-span-2 flex flex-col gap-6">
+
+              {/* LIVE COUNTDOWN */}
+              <div className="bg-white/3 border border-white/10 rounded-3xl p-8 text-center backdrop-blur-md">
+                <div className="flex items-center justify-center gap-2 text-xs font-bold uppercase tracking-widest text-[#0099cc] mb-6">
+                  <Clock className="h-4 w-4" />
+                  Conference Starts In
+                </div>
+                <div className="grid grid-cols-4 gap-3">
+                  {[
+                    { val: countdown.days,    label: "Days" },
+                    { val: countdown.hours,   label: "Hrs" },
+                    { val: countdown.minutes, label: "Min" },
+                    { val: countdown.seconds, label: "Sec" },
+                  ].map(({ val, label }) => (
+                    <div key={label} className="flex flex-col items-center">
+                      <div className="w-full bg-[#0099cc]/10 border border-[#0099cc]/30 rounded-2xl py-4 mb-2">
+                        <span className="text-3xl md:text-4xl font-black text-white tabular-nums">
+                          {String(val).padStart(2, '0')}
+                        </span>
+                      </div>
+                      <span className="text-[10px] font-bold uppercase tracking-widest text-white/40">{label}</span>
+                    </div>
+                  ))}
+                </div>
+              </div>
+
+              {/* TRACKS */}
+              <div className="bg-white/3 border border-white/10 rounded-3xl p-7 backdrop-blur-md">
+                <div className="text-xs font-bold uppercase tracking-widest text-white/50 mb-4">Conference Tracks</div>
+                <ul className="space-y-3">
+                  {["Computer Science & AI", "Education Technologies", "Medical Informatics", "Business Intelligence", "Interdisciplinary Research"].map((t) => (
+                    <li key={t} className="flex items-center gap-3 text-sm text-white/80 font-medium">
+                      <div className="h-1.5 w-1.5 rounded-full bg-[#0099cc] shrink-0" />
+                      {t}
+                    </li>
+                  ))}
+                </ul>
+              </div>
+
             </div>
           </div>
         </div>

@@ -6,7 +6,7 @@ import { ArrowRight, Calendar, MapPin, CheckCircle2, User, BookOpen, Scale, Glob
 const conferenceData = {
   id: "ICCEMB-26",
   title: "International Conference on Computer Science, Education, Medical and Business",
-  date: "10th May 2026",
+  date: "31 May 2026",
   location: "Online Mode",
   registrationLink: "https://forms.gle/u6H8B5cd1KJrJRtQ7",
   about: [
@@ -76,9 +76,9 @@ const conferenceData = {
     { name: "Dr. Firas Zeidan", org: "Lebanon", country: "Lebanon" }
   ],
   timeline: [
-    { date: "TBD", label: "Paper Submission", desc: "Deadline to be announced" },
-    { date: "TBD", label: "Acceptance", desc: "Notification of acceptance" },
-    { date: "10 May 2026", label: "Conference Date", desc: "Main event" }
+    { date: "15 May 2026", label: "Paper Submission", desc: "Deadline for paper submission" },
+    { date: "22 May 2026", label: "Acceptance", desc: "Notification of acceptance" },
+    { date: "31 May 2026", label: "Conference Date", desc: "Main event" }
   ]
 };
 

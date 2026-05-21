@@ -6,7 +6,7 @@ import { ArrowRight, Calendar, MapPin, CheckCircle2, Globe, BookOpen, Star, Trop
 const conferenceData = {
   id: "ICAITS-26",
   title: "International Conference on Artificial Intelligence & Intelligent Technology Systems",
-  date: "10 May 2026",
+  date: "21 June 2026",
   location: "Virtual Mode",
   registrationLink: "https://docs.google.com/forms/d/e/1FAIpQLSfN58Q2gYRO9ynO518Mai3mlWflPZ5F7i0acBtYo75ynxlIeA/viewform?usp=publish-editor",
   about: [
@@ -45,10 +45,10 @@ const conferenceData = {
     { title: "Cybersecurity", desc: "Secure systems and digital protection." }
   ],
   timeline: [
-    { date: "20 April 2026", label: "Submission", desc: "Deadline for paper submission" },
-    { date: "28 April 2026", label: "Acceptance", desc: "Notification of acceptance" },
-    { date: "5 May 2026", label: "Final", desc: "Camera-ready submission" },
-    { date: "10 May 2026", label: "Conference Date", desc: "Main event" }
+    { date: "01 June 2026", label: "Submission", desc: "Deadline for paper submission" },
+    { date: "08 June 2026", label: "Acceptance", desc: "Notification of acceptance" },
+    { date: "15 June 2026", label: "Final", desc: "Camera-ready submission" },
+    { date: "21 June 2026", label: "Conference Date", desc: "Main event" }
   ]
 };
 

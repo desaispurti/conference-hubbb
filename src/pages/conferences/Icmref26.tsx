@@ -7,7 +7,7 @@ import { ArrowRight, Calendar, MapPin, CheckCircle2, User, Globe, BookOpen, Star
 const conferenceData = {
   id: "ICMREF-26",
   title: "International Conference on Multidisciplinary Research & Emerging Frontiers in AI, Software Systems & Emerging Technologies",
-  date: "07 June 2026",
+  date: "14 June 2026",
   location: "IMFC Kenya Headquarters, Nairobi, Kenya",
   registrationLink: "https://forms.gle/oY44ySZUNz3puve4A",
   about: [
@@ -107,10 +107,10 @@ const conferenceData = {
     { name: "Emem Akpabio", org: "South Africa", country: "South Africa" }
   ],
   timeline: [
-    { date: "15 May 2026", label: "Paper Submission", desc: "Deadline for submitting papers" },
-    { date: "22 May 2026", label: "Acceptance Notification", desc: "Notification of acceptance" },
-    { date: "30 May 2026", label: "Final Camera-Ready Submission", desc: "Final submission deadline" },
-    { date: "07 June 2026", label: "Conference Date", desc: "Main event in Nairobi, Kenya" }
+    { date: "25 May 2026", label: "Paper Submission", desc: "Deadline for submitting papers" },
+    { date: "01 June 2026", label: "Acceptance Notification", desc: "Notification of acceptance" },
+    { date: "08 June 2026", label: "Final Camera-Ready Submission", desc: "Final submission deadline" },
+    { date: "14 June 2026", label: "Conference Date", desc: "Main event in Nairobi, Kenya" }
   ]
 };
 

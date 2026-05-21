@@ -73,7 +73,7 @@ export const upcomingConferences: Record<string, ConferenceData> = {
   "icmref-26": {
     id: "icmref-26",
     title: "International Conference on Multidisciplinary Research & Emerging Frontiers in AI, Software Systems & Emerging Technologies (ICMREF-26)",
-    date: "7 June 2026",
+    date: "14 June 2026",
     location: "Hybrid Mode | Nairobi, Kenya",
     collaboration: "IMFC KENYA",
     description: "ICMREF-26 is an international academic forum dedicated to advancing multidisciplinary research across emerging domains in Artificial Intelligence, Software Systems, and Advanced Technologies. The conference aims to provide a structured platform for researchers, academicians, and industry professionals to present original contributions, exchange technical insights, and explore collaborative opportunities.",
@@ -123,7 +123,7 @@ export const upcomingConferences: Record<string, ConferenceData> = {
   "icaits-26": {
     id: "icaits-26",
     title: "ICAESET-2026",
-    date: "14 June 2026",
+    date: "21 June 2026",
     location: "Global Participation",
     description: "A prestigious platform for discussing cutting-edge innovations in engineering systems and computing paradigms. It provides an interdisciplinary forum for sharing research findings and practical experiences. All submissions undergo a double-blind peer-review process, offering ISBN Proceedings and recommendations for Scopus/WoS indexed journals.",
     thematicTracks: [
@@ -144,7 +144,7 @@ export const upcomingConferences: Record<string, ConferenceData> = {
   "icates-26": {
     id: "icates-26",
     title: "ICATES-26",
-    date: "14 June 2026",
+    date: "28 June 2026",
     location: "Hybrid Mode",
     description: "A premier platform exploring advancements in AI, engineering technologies, and intelligent systems. It focuses on the integration of AI with robotics, automation, and smart infrastructure. All submissions undergo a double-blind peer-review process, offering ISBN Proceedings and recommendations for Scopus/WoS indexed journals.",
     thematicTracks: [
