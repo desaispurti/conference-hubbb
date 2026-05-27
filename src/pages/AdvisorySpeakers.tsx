@@ -17,6 +17,7 @@ const AdvisorySpeakers = () => (
       eyebrow="Leadership"
       title="Advisory Speakers"
       description="Our Advisory Board guides editorial, scientific, and strategic direction across all conferences."
+      variant="waves"
     />
     <section className="container py-16 grid md:grid-cols-2 lg:grid-cols-3 gap-6">
       {advisors.map((a) => (
