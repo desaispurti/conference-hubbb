@@ -1,59 +1,103 @@
 import { Link } from "react-router-dom";
-import { Mail, Linkedin, Youtube } from "lucide-react";
+import { Mail, Linkedin, Youtube, MapPin, Landmark } from "lucide-react";
 
 export const Footer = () => {
   return (
     <footer className="bg-card border-t border-border/50 text-foreground mt-24">
       <div className="container py-16 grid gap-12 md:grid-cols-2 lg:grid-cols-4">
-        <div>
-          <Link to="/" className="flex items-center gap-3 mb-6 group">
-            <div className="h-12 w-12 rounded-full overflow-hidden flex items-center justify-center bg-white shadow-gold transition-transform group-hover:scale-105 shrink-0 border border-white/10 p-0.5">
-              <img src="https://media.licdn.com/dms/image/v2/D4D0BAQFzrllKGZyfmg/company-logo_200_200/B4DZlYrBUuJcAI-/0/1758129300108/eminsphere_global_academic_services_logo?e=2147483647&v=beta&t=s0XQXTV_ZMK77OBUqHGaMXi8N-kWg-c0XIAFwBZe_ls" alt="Eminsphere Logo" className="h-full w-full object-contain rounded-full" />
-            </div>
-            <div className="leading-tight">
-              <div className="font-serif font-black text-xl text-foreground tracking-tight">Eminsphere™</div>
-              <div className="text-[9px] uppercase tracking-widest text-accent font-bold">Research & Innovation</div>
-            </div>
-          </Link>
+        {/* Column 1: About */}
+        <div className="space-y-6">
+          <div>
+            <h2 className="font-serif font-black text-2xl text-foreground tracking-tight">Eminsphere™</h2>
+            <div className="text-sm text-muted-foreground mt-1">Global Academic, Research & Innovation Platform</div>
+          </div>
           <p className="text-sm text-muted-foreground leading-relaxed">
-            Connecting researchers, innovators, and visionaries through world-class
-            international conferences and academic publishing.
+            Eminsphere™ is a professionally structured and compliant organization, operating in alignment with regulatory frameworks established by the Government of India.
           </p>
-          <div className="flex gap-3 mt-6">
-            <a href="https://www.linkedin.com/company/106142250/admin/dashboard/" target="_blank" rel="noopener noreferrer" className="h-10 w-10 rounded-full bg-muted hover:bg-primary hover:text-primary-foreground flex items-center justify-center transition-smooth shadow-sm hover:shadow-gold hover:-translate-y-1">
-              <Linkedin className="h-4 w-4" />
-            </a>
-            <a href="https://www.youtube.com/@Eminsphere" target="_blank" rel="noopener noreferrer" className="h-10 w-10 rounded-full bg-muted hover:bg-[#0099cc] hover:text-white flex items-center justify-center transition-smooth shadow-sm hover:shadow-gold hover:-translate-y-1">
-              <Youtube className="h-4 w-4" />
-            </a>
+          <div className="space-y-3 flex flex-col items-start">
+            <span className="inline-flex items-center px-3 py-1.5 rounded-md bg-muted/50 text-xs text-muted-foreground border border-border">
+              Recognized as an MSME Registered Enterprise
+            </span>
+            <span className="inline-flex items-center px-3 py-1.5 rounded-md bg-muted/50 text-xs text-muted-foreground border border-border">
+              Compliant with Maharashtra Shop & Establishment Regulations
+            </span>
           </div>
         </div>
 
+        {/* Column 2: Quick Links */}
         <div>
-          <h4 className="font-sans font-bold text-base mb-5 text-foreground">Conferences</h4>
-          <ul className="space-y-3 text-sm text-muted-foreground">
-            <li><Link to="/upcoming-conferences" className="hover:text-accent transition-colors">Upcoming</Link></li>
-            <li><Link to="/recent-conferences" className="hover:text-accent transition-colors">Recent</Link></li>
-            <li><Link to="/recent-proceedings" className="hover:text-accent transition-colors">Proceedings</Link></li>
-            <li><Link to="/innovation-challenge-2026" className="hover:text-accent transition-colors">Innovation Challenge</Link></li>
+          <h4 className="font-sans font-bold text-base mb-6 text-foreground">Quick Links</h4>
+          <div className="grid grid-cols-2 gap-4">
+            <div>
+              <div className="text-[10px] font-bold uppercase tracking-wider text-accent mb-3">Conferences</div>
+              <ul className="space-y-2 text-sm text-muted-foreground">
+                <li><Link to="/upcoming-conferences" className="hover:text-accent transition-colors">Upcoming</Link></li>
+                <li><Link to="/recent-conferences" className="hover:text-accent transition-colors">Recent</Link></li>
+                <li><Link to="/recent-proceedings" className="hover:text-accent transition-colors">Proceedings</Link></li>
+              </ul>
+            </div>
+            <div>
+              <div className="text-[10px] font-bold uppercase tracking-wider text-accent mb-3">Get Involved</div>
+              <ul className="space-y-2 text-sm text-muted-foreground">
+                <li><Link to="/registration" className="hover:text-accent transition-colors">Registration</Link></li>
+                <li><Link to="/apply-reviewer" className="hover:text-accent transition-colors">Reviewer</Link></li>
+                <li><Link to="/apply-advisory" className="hover:text-accent transition-colors">Advisory</Link></li>
+              </ul>
+            </div>
+          </div>
+          <div className="mt-8">
+            <div className="text-[10px] font-bold uppercase tracking-wider text-accent mb-3">Follow Us</div>
+            <div className="flex gap-3">
+              <a href="https://www.linkedin.com/company/106142250/admin/dashboard/" target="_blank" rel="noopener noreferrer" className="h-8 w-8 rounded-full bg-muted hover:bg-primary hover:text-primary-foreground flex items-center justify-center transition-smooth shadow-sm hover:shadow-gold">
+                <Linkedin className="h-3.5 w-3.5" />
+              </a>
+              <a href="https://www.youtube.com/@Eminsphere" target="_blank" rel="noopener noreferrer" className="h-8 w-8 rounded-full bg-muted hover:bg-[#0099cc] hover:text-white flex items-center justify-center transition-smooth shadow-sm hover:shadow-gold">
+                <Youtube className="h-3.5 w-3.5" />
+              </a>
+            </div>
+          </div>
+        </div>
+
+        {/* Column 3: Contact & Registered Office */}
+        <div>
+          <h4 className="font-sans font-bold text-base mb-6 text-foreground">Contact & Registered Office</h4>
+          <ul className="space-y-5 text-sm text-muted-foreground">
+            <li className="flex gap-3 items-center">
+              <Mail className="h-4 w-4 shrink-0 text-muted-foreground" />
+              <a href="mailto:info@eminsphere.com" className="hover:text-accent transition-colors">info@eminsphere.com</a>
+            </li>
+            <li className="flex gap-3 items-start">
+              <MapPin className="h-4 w-4 shrink-0 text-destructive mt-0.5" />
+              <div className="leading-relaxed">
+                Ground Floor, RAHEJA WOODS,<br />
+                Kalyani Nagar, Pune,<br />
+                Maharashtra 411006, India
+              </div>
+            </li>
+            <li className="flex gap-3 items-start">
+              <Landmark className="h-4 w-4 shrink-0 text-muted-foreground mt-0.5" />
+              <div className="leading-relaxed">
+                GST Identification Number (GSTIN):<br />
+                27KNJPS9156R1ZH
+              </div>
+            </li>
+            <li className="flex gap-3 items-center">
+              <Linkedin className="h-4 w-4 shrink-0 text-[#0077b5]" />
+              <a href="https://www.linkedin.com/company/106142250/admin/dashboard/" target="_blank" rel="noopener noreferrer" className="hover:text-accent transition-colors">LinkedIn Presence</a>
+            </li>
           </ul>
         </div>
 
+        {/* Column 4: Legal & Compliance */}
         <div>
-          <h4 className="font-sans font-bold text-base mb-5 text-foreground">Get Involved</h4>
+          <h4 className="font-sans font-bold text-base mb-6 text-foreground">Legal & Compliance</h4>
           <ul className="space-y-3 text-sm text-muted-foreground">
-            <li><Link to="/registration" className="hover:text-accent transition-colors">Registration</Link></li>
-            <li><Link to="/apply-reviewer" className="hover:text-accent transition-colors">Apply as Reviewer</Link></li>
-            <li><Link to="/apply-advisory" className="hover:text-accent transition-colors">Advisory Team</Link></li>
-            <li><Link to="/careers" className="hover:text-accent transition-colors">Careers</Link></li>
+            <li><Link to="/terms" className="hover:text-accent transition-colors">Terms & Conditions</Link></li>
+            <li><Link to="/privacy" className="hover:text-accent transition-colors">Privacy Policy</Link></li>
           </ul>
-        </div>
-
-        <div>
-          <h4 className="font-sans font-bold text-base mb-5 text-foreground">Contact</h4>
-          <ul className="space-y-4 text-sm text-muted-foreground">
-            <li className="flex gap-3 items-center"><Mail className="h-4 w-4 text-accent shrink-0" /> <a href="mailto:info@eminsphere.com" className="hover:text-accent transition-colors">info@eminsphere.com</a></li>
-          </ul>
+          <p className="mt-6 text-sm text-muted-foreground leading-relaxed">
+            All operations are conducted in accordance with applicable laws of India, ensuring transparency, regulatory compliance, and professional governance standards.
+          </p>
         </div>
       </div>
 
@@ -61,12 +105,12 @@ export const Footer = () => {
         <div className="container py-6 flex flex-col md:flex-row justify-between items-center gap-4 text-sm text-muted-foreground font-medium">
           <p>© {new Date().getFullYear()} Eminsphere™. All rights reserved.</p>
           <div className="flex gap-6">
-            <a href="#" className="hover:text-accent transition-colors">Privacy</a>
-            <a href="#" className="hover:text-accent transition-colors">Terms</a>
-            <a href="#" className="hover:text-accent transition-colors">Cookies</a>
+            <Link to="/privacy" className="hover:text-accent transition-colors">Privacy</Link>
+            <Link to="/terms" className="hover:text-accent transition-colors">Terms</Link>
           </div>
         </div>
       </div>
     </footer>
   );
 };
+
