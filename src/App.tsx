@@ -23,6 +23,8 @@ import ApplyAdvisory from "./pages/ApplyAdvisory";
 import Books from "./pages/Books";
 import Careers from "./pages/Careers";
 import Blog from "./pages/Blog";
+import Privacy from "./pages/Privacy";
+import Terms from "./pages/Terms";
 import ResearchFunding from "./pages/ResearchFunding";
 import Iccemb26 from "./pages/conferences/Iccemb26";
 import Icmref26 from "./pages/conferences/Icmref26";
@@ -70,6 +72,8 @@ const App = () => {
             <Route path="/books" element={<Books />} />
             <Route path="/careers" element={<Careers />} />
             <Route path="/blog" element={<Blog />} />
+            <Route path="/privacy" element={<Privacy />} />
+            <Route path="/terms" element={<Terms />} />
           </Route>
           
           {/* Custom Full-Page Conference Sites */}
@@ -89,3 +93,4 @@ const App = () => {
 };
 
 export default App;
+
