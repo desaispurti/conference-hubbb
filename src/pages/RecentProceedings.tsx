@@ -110,8 +110,8 @@ const RecentProceedings = () => {
         <div className="container max-w-3xl relative z-10">
           <h2 className="text-4xl md:text-5xl font-serif font-bold text-white mb-6">Need to verify a publication?</h2>
           <p className="text-xl text-white/70 mb-12 leading-relaxed">All Eminsphere proceedings are strictly peer-reviewed and indexed. Reach out to our editorial board for official verification and DOIs.</p>
-          <Button asChild size="lg" className="glass text-white font-bold h-16 px-12 rounded-full border-white/20 hover:bg-white/10 transition-all text-lg">
-            <a href="mailto:contact@eminsphere.com">Contact Editorial Team</a>
+          <Button asChild size="lg" className="glass text-white font-bold h-16 px-12 rounded-full border-white/20 hover:bg-white/10 transition-all text-lg relative z-20">
+            <a href="https://mail.google.com/mail/?view=cm&fs=1&to=info@eminsphere.com&su=Publication%20Verification%20Request" target="_blank" rel="noopener noreferrer">Contact Editorial Team</a>
           </Button>
         </div>
       </section>
