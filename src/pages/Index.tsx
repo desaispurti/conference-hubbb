@@ -146,6 +146,27 @@ const upcoming = [
   { title: "ICATES-26: AI, Technology & Engineering Systems", city: "Hybrid Mode", date: "28 June 2026", topic: "AI & Engineering", link: "/icates-26", img: "https://images.unsplash.com/photo-1581091226825-a6a2a5aee158?q=80&w=800&auto=format&fit=crop" },
 ];
 
+const CONFERENCE_DATE = new Date("2026-05-31T09:00:00+05:30");
+
+function useCountdown(target: Date) {
+  const calc = () => {
+    const diff = target.getTime() - Date.now();
+    if (diff <= 0) return { days: 0, hours: 0, minutes: 0, seconds: 0 };
+    return {
+      days: Math.floor(diff / 86400000),
+      hours: Math.floor((diff % 86400000) / 3600000),
+      minutes: Math.floor((diff % 3600000) / 60000),
+      seconds: Math.floor((diff % 60000) / 1000),
+    };
+  };
+  const [countdown, setCountdown] = useState(calc);
+  useEffect(() => {
+    const t = setInterval(() => setCountdown(calc()), 1000);
+    return () => clearInterval(t);
+  }, []);
+  return countdown;
+}
+
 const Index = () => {
   const [activeConf, setActiveConf] = useState(0);
   const [animKey, setAnimKey] = useState(0);
