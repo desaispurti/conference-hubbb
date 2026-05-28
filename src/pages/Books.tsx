@@ -1,6 +1,10 @@
 import { PageHero } from "@/components/layout/PageHero";
 import { Card } from "@/components/ui/card";
 import { ArrowRight, BookOpen, BrainCircuit, Cloud, Database, Network, Briefcase, Cpu } from "lucide-react";
+import bookImg1 from "@/assets/WhatsApp Image 2026-05-28 at 1.15.19 PM.jpeg";
+import bookImg2 from "@/assets/WhatsApp Image 2026-05-28 at 1.15.21 PM.jpeg";
+import bookImg3 from "@/assets/WhatsApp Image 2026-05-28 at 1.15.22 PM.jpeg";
+import bookImg4 from "@/assets/WhatsApp Image 2026-05-28 at 1.15.24 PM.jpeg";
 
 const stats = [
   { value: "100+", label: "Titles Published" },
@@ -20,40 +24,67 @@ const disciplines = [
 
 const publishedBooks = [
   {
-    title: "Generative AI",
-    subtitle: "Foundations, Architectures, and Real-World Applications",
-    authors: "Prof. Gaurav Kumar Gupta, Prof. Shubhangi Sachin Pharande",
-    isbn: "978-8199462489",
-    date: "December 2025",
-    link: "https://a.co/d/d7jXYly",
-    image: "https://static.wixstatic.com/media/30814e_199f000947d84fe7a1e3f97f0535ab35~mv2.jpg"
-  },
-  {
-    title: "Foundations of Modern Computing",
-    subtitle: "Information Technology – I (Kindle Edition)",
-    authors: "Dr. Vilas Joshi, Praveen Krishnankutty Valsala",
-    isbn: "978-8199462403",
-    date: "December 2025",
-    link: "https://a.co/d/gWNWZK5",
-    image: "https://static.wixstatic.com/media/30814e_6dbe70cbdceb481bb40f14d92266b7dc~mv2.png"
-  },
-  {
-    title: "Fundamentals of Artificial Intelligence",
-    subtitle: "and Its Practical Applications",
-    authors: "Prof. Indranil Mukherjee, Sudeep Annappa Shanubhog",
-    isbn: "978-8199462427",
-    date: "December 2025",
-    link: "https://a.co/d/eoAU71q",
-    image: "https://static.wixstatic.com/media/30814e_19396b73f27f4728b616f41053071dac~mv2.jpg"
-  },
-  {
-    title: "AI for a Sustainable Future",
+    title: "Modernization of legacy systems over cloud",
     subtitle: "",
-    authors: "Dr. Latika Desai, Dr. Deepali Rajendra Sale",
-    isbn: "978-8199631045",
-    date: "December 2025",
-    link: "https://a.co/d/4UtADsg",
-    image: "https://static.wixstatic.com/media/30814e_12125d969605430f9e7e06f3731a8ff1~mv2.png"
+    authors: "Mr. Mrugendra R Madalagi, Mr. Manoj Shrishail Bahirgonde",
+    isbn: "978-81-998717-6-2",
+    date: "2026",
+    link: "https://a.co/d/03MieTo5",
+    image: bookImg1
+  },
+  {
+    title: "Analytics in the AI Era",
+    subtitle: "",
+    authors: "Prajakta Prakash Talathi, Ankur Jain, Mayur Khandelwal, Deepak K. Sharma",
+    isbn: "978-81-685414-6-7",
+    date: "2026",
+    link: "https://a.co/d/0730890m",
+    image: bookImg2
+  },
+  {
+    title: "IT IN THE ENERGY SECTOR",
+    subtitle: "",
+    authors: "Mr. Vilas Shewale",
+    isbn: "978-81-685414-2-9",
+    date: "2026",
+    link: "https://a.co/d/08xpdvHD",
+    image: bookImg4
+  },
+  {
+    title: "Next-Generation AI-Native IAM",
+    subtitle: "",
+    authors: "Saket Dhanraj Chaudhari",
+    isbn: "978-8199871717",
+    date: "March 2026",
+    link: "https://a.co/d/04GbWENL",
+    image: "https://static.wixstatic.com/media/30814e_9ddc6849f8e44a65b86f7bff5824cd6d~mv2.png"
+  },
+  {
+    title: "Machine Learning Models for Intelligent Software Engineering and Automation",
+    subtitle: "",
+    authors: "Dr. Uday Chandrakant Patkar",
+    isbn: "978-81-996310-5-2",
+    date: "February 2026",
+    link: "https://a.co/d/cLEthHu",
+    image: "https://static.wixstatic.com/media/30814e_cc155ed03b104806bf81258474a65cf7~mv2.png"
+  },
+  {
+    title: "Analytical Geometry",
+    subtitle: "",
+    authors: "Dr. Sidheshwar Sangramappa Bellale, Mr Kore Suresh Umakantrao",
+    isbn: "979-8246896747",
+    date: "February 2026",
+    link: "https://a.co/d/0hQ2qpMN",
+    image: "https://static.wixstatic.com/media/30814e_4e7690d89d9040cbb988c86eecfc0961~mv2.png"
+  },
+  {
+    title: "Building Public Health Data Systems",
+    subtitle: "",
+    authors: "Mr. Rakesh Ramakrishna Pai",
+    isbn: "978-8199871779",
+    date: "February 2026",
+    link: "https://a.co/d/0cY4D84c",
+    image: "https://static.wixstatic.com/media/30814e_1f17314764334431a3d4eaf47b220f68~mv2.png"
   },
   {
     title: "Cloud-Scale Systems",
@@ -92,40 +123,49 @@ const publishedBooks = [
     image: "https://static.wixstatic.com/media/30814e_1fc8c1efbb284705926f3bbeb216b966~mv2.png"
   },
   {
-    title: "Machine Learning Models for Intelligent Software Engineering and Automation",
-    subtitle: "",
-    authors: "Dr. Uday Chandrakant Patkar",
-    isbn: "978-81-996310-5-2",
-    date: "February 2026",
-    link: "https://a.co/d/cLEthHu",
-    image: "https://static.wixstatic.com/media/30814e_cc155ed03b104806bf81258474a65cf7~mv2.png"
+    title: "Generative AI",
+    subtitle: "Foundations, Architectures, and Real-World Applications",
+    authors: "Prof. Gaurav Kumar Gupta, Prof. Shubhangi Sachin Pharande",
+    isbn: "978-8199462489",
+    date: "December 2025",
+    link: "https://a.co/d/d7jXYly",
+    image: "https://static.wixstatic.com/media/30814e_199f000947d84fe7a1e3f97f0535ab35~mv2.jpg"
   },
   {
-    title: "Analytical Geometry",
-    subtitle: "",
-    authors: "Dr. Sidheshwar Sangramappa Bellale, Mr Kore Suresh Umakantrao",
-    isbn: "979-8246896747",
-    date: "February 2026",
-    link: "https://a.co/d/0hQ2qpMN",
-    image: "https://static.wixstatic.com/media/30814e_4e7690d89d9040cbb988c86eecfc0961~mv2.png"
+    title: "Foundations of Modern Computing",
+    subtitle: "Information Technology – I (Kindle Edition)",
+    authors: "Dr. Vilas Joshi, Praveen Krishnankutty Valsala",
+    isbn: "978-8199462403",
+    date: "December 2025",
+    link: "https://a.co/d/gWNWZK5",
+    image: "https://static.wixstatic.com/media/30814e_6dbe70cbdceb481bb40f14d92266b7dc~mv2.png"
   },
   {
-    title: "Building Public Health Data Systems",
-    subtitle: "",
-    authors: "Mr. Rakesh Ramakrishna Pai",
-    isbn: "978-8199871779",
-    date: "February 2026",
-    link: "https://a.co/d/0cY4D84c",
-    image: "https://static.wixstatic.com/media/30814e_1f17314764334431a3d4eaf47b220f68~mv2.png"
+    title: "Fundamentals of Artificial Intelligence",
+    subtitle: "and Its Practical Applications",
+    authors: "Prof. Indranil Mukherjee, Sudeep Annappa Shanubhog",
+    isbn: "978-8199462427",
+    date: "December 2025",
+    link: "https://a.co/d/eoAU71q",
+    image: "https://static.wixstatic.com/media/30814e_19396b73f27f4728b616f41053071dac~mv2.jpg"
   },
   {
-    title: "Next-Generation AI-Native IAM",
+    title: "AI for a Sustainable Future",
     subtitle: "",
-    authors: "Saket Dhanraj Chaudhari",
-    isbn: "978-8199871717",
-    date: "March 2026",
-    link: "https://a.co/d/04GbWENL",
-    image: "https://static.wixstatic.com/media/30814e_9ddc6849f8e44a65b86f7bff5824cd6d~mv2.png"
+    authors: "Dr. Latika Desai, Dr. Deepali Rajendra Sale",
+    isbn: "978-8199631045",
+    date: "December 2025",
+    link: "https://a.co/d/4UtADsg",
+    image: "https://static.wixstatic.com/media/30814e_12125d969605430f9e7e06f3731a8ff1~mv2.png"
+  },
+  {
+    title: "SECURE CLOUD AI & ML FOR FINANCIAL AND PENSION SYSTEMS",
+    subtitle: "",
+    authors: "Satish Kabade",
+    isbn: "978-81-685414-3-6",
+    date: "2022",
+    link: "https://a.co/d/0bsCpJmF",
+    image: bookImg3
   }
 ];
 

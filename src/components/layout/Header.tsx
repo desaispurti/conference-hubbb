@@ -55,7 +55,7 @@ export const Header = () => {
       <div className="container flex h-20 items-center justify-between">
         <Link to="/" className="flex items-center gap-3 group">
           <div className="h-12 w-12 rounded-full overflow-hidden flex items-center justify-center bg-white shadow-gold transition-transform group-hover:scale-105 shrink-0 border border-white/10 p-0.5">
-            <img src="https://media.licdn.com/dms/image/v2/D4D0BAQFzrllKGZyfmg/company-logo_200_200/B4DZlYrBUuJcAI-/0/1758129300108/eminsphere_global_academic_services_logo?e=2147483647&v=beta&t=s0XQXTV_ZMK77OBUqHGaMXi8N-kWg-c0XIAFwBZe_ls" alt="Eminsphere Logo" className="h-full w-full object-contain rounded-full" />
+            <img src="/eminsphere-logo.png" alt="Eminsphere Logo" className="h-full w-full object-contain rounded-full" />
           </div>
           <div className="leading-tight">
             <div className={`font-serif font-black text-xl tracking-tight ${textColor.replace('/90', '')}`}>Eminsphere™</div>
