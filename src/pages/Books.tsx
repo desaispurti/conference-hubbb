@@ -24,33 +24,6 @@ const disciplines = [
 
 const publishedBooks = [
   {
-    title: "Modernization of legacy systems over cloud",
-    subtitle: "",
-    authors: "Mr. Mrugendra R Madalagi, Mr. Manoj Shrishail Bahirgonde",
-    isbn: "978-81-998717-6-2",
-    date: "2026",
-    link: "https://a.co/d/03MieTo5",
-    image: bookImg1
-  },
-  {
-    title: "Analytics in the AI Era",
-    subtitle: "",
-    authors: "Prajakta Prakash Talathi, Ankur Jain, Mayur Khandelwal, Deepak K. Sharma",
-    isbn: "978-81-685414-6-7",
-    date: "2026",
-    link: "https://a.co/d/0730890m",
-    image: bookImg2
-  },
-  {
-    title: "IT IN THE ENERGY SECTOR",
-    subtitle: "",
-    authors: "Mr. Vilas Shewale",
-    isbn: "978-81-685414-2-9",
-    date: "2026",
-    link: "https://a.co/d/08xpdvHD",
-    image: bookImg4
-  },
-  {
     title: "Next-Generation AI-Native IAM",
     subtitle: "",
     authors: "Saket Dhanraj Chaudhari",
@@ -159,11 +132,38 @@ const publishedBooks = [
     image: "https://static.wixstatic.com/media/30814e_12125d969605430f9e7e06f3731a8ff1~mv2.png"
   },
   {
+    title: "Modernization of legacy systems over cloud",
+    subtitle: "",
+    authors: "Mr. Mrugendra R Madalagi, Mr. Manoj Shrishail Bahirgonde",
+    isbn: "978-81-998717-6-2",
+    date: "March 2025",
+    link: "https://a.co/d/03MieTo5",
+    image: bookImg1
+  },
+  {
+    title: "Analytics in the AI Era",
+    subtitle: "",
+    authors: "Prajakta Prakash Talathi, Ankur Jain, Mayur Khandelwal, Deepak K. Sharma",
+    isbn: "978-81-685414-6-7",
+    date: "November 2024",
+    link: "https://a.co/d/0730890m",
+    image: bookImg2
+  },
+  {
+    title: "IT IN THE ENERGY SECTOR",
+    subtitle: "",
+    authors: "Mr. Vilas Shewale",
+    isbn: "978-81-685414-2-9",
+    date: "December 2022",
+    link: "https://a.co/d/08xpdvHD",
+    image: bookImg4
+  },
+  {
     title: "SECURE CLOUD AI & ML FOR FINANCIAL AND PENSION SYSTEMS",
     subtitle: "",
     authors: "Satish Kabade",
     isbn: "978-81-685414-3-6",
-    date: "2022",
+    date: "October 2022",
     link: "https://a.co/d/0bsCpJmF",
     image: bookImg3
   }
