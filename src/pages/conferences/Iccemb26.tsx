@@ -2,6 +2,8 @@ import { Card } from "@/components/ui/card";
 import ConferenceSections from "@/components/layout/ConferenceSections";
 import { Button } from "@/components/ui/button";
 import { ArrowRight, Calendar, MapPin, CheckCircle2, User, BookOpen, Scale, Globe, FileCheck2, ScrollText, Users } from "lucide-react";
+import navinImg from "@/assets/image.png";
+import pankajImg from "@/assets/WhatsApp Image 2026-05-29 at 11.21.06 AM.jpeg";
 
 const conferenceData = {
   id: "ICCEMB-26",
@@ -55,7 +57,12 @@ const conferenceData = {
     { name: "Dr. Shashi Bala Rai", org: "Panipat Institute of Engineering & Technology, Haryana", country: "India", img: "https://static.wixstatic.com/media/30814e_4be5926d8adc4e43bff352ea1ccb6c2a~mv2.jpeg" },
     { name: "Dr. Vindhya Sathya Singh", org: "Sultan Qaboos University, Muscat, Oman", country: "Oman", img: "https://static.wixstatic.com/media/30814e_8eb90487810548c6ba5765e78ca79c99~mv2.jpeg" },
     { name: "HarshaTeja Vakanthula", org: "Sr. Technical Architect - Enterprise Cloud Services, RISE with SAP, Cloud ERP & Hyperscaler Strategy, USA", country: "USA", img: "https://static.wixstatic.com/media/30814e_9b1e02fa3fa44305b86bf422621791fc~mv2.jpg" },
-    { name: "Kateryna Antosz", org: "Rzeszow University of Technology, Poland", country: "Poland", img: "https://static.wixstatic.com/media/30814e_36d2bb3012e64343a18002662ca61e6b~mv2.avif" }
+    { name: "Kateryna Antosz", org: "Rzeszow University of Technology, Poland", country: "Poland", img: "https://static.wixstatic.com/media/30814e_36d2bb3012e64343a18002662ca61e6b~mv2.avif" },
+    { name: "Navin Kumar Chhibber", org: "AI/ML, GenAI and Data Platforms Leader, Product Engineering and Digital Transformation Expert, USA", country: "USA", img: navinImg },
+    { name: "Pankaj Arora", org: "Healthcare Supply Chain Transformation Leader, Raleigh, North Carolina", country: "USA", img: pankajImg },
+    { name: "Dr. Aida Mehrad", org: "C3S Business School", country: "Spain", img: "https://static.wixstatic.com/media/502b14_2f32591e100346daa035a4aaf27ef7d7~mv2.jpeg" },
+    { name: "Dr. Walida Ounruean", org: "Uttaradit Rajabhat University", country: "Thailand", img: "https://static.wixstatic.com/media/30814e_73060115e6b34cb882286565559ff5e2~mv2.jpeg" },
+    { name: "Hemang Upadhyay", org: "AI, E-commerce & Analytics", country: "USA", img: "https://static.wixstatic.com/media/30814e_d8f3f76a4383421eb967c779a89ac17f~mv2.jpeg" }
   ],
   tracks: [
     "Computer Science",
