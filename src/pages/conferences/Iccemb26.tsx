@@ -9,7 +9,7 @@ const conferenceData = {
   id: "ICCEMB-26",
   title: "International Conference on Computer Science, Education, Medical and Business",
   date: "31st May 2026",
-  location: "Online Mode",
+  location: "Kenya, East Africa (online Mode)",
   registrationLink: "https://forms.gle/u6H8B5cd1KJrJRtQ7",
   about: [
     "The scope of ICCEMB-26 encompasses theoretical, experimental, and applied research contributions in the domains of Computer Science, Artificial Intelligence, Education Technologies, Medical Informatics, and Business Intelligence.",
@@ -83,9 +83,11 @@ const conferenceData = {
     { name: "Dr. Firas Zeidan", org: "Lebanon", country: "Lebanon", img: "https://static.wixstatic.com/media/30814e_571b3e70d8ff476f8b1272ef84538d8f~mv2.jpeg" }
   ],
   timeline: [
-    { date: "TBD", label: "Paper Submission", desc: "Deadline to be announced" },
-    { date: "TBD", label: "Acceptance", desc: "Notification of acceptance" },
-    { date: "31 May 2026", label: "Conference Date", desc: "Main event" }
+    { date: "May 05, 2026", label: "Abstract Submission", desc: "Deadline" },
+    { date: "May 15, 2026", label: "Full Paper Submission", desc: "Deadline" },
+    { date: "May 20, 2026", label: "Acceptance Notification", desc: "Notification of acceptance" },
+    { date: "May 25, 2026", label: "Final Submission & Registration", desc: "Deadline" },
+    { date: "May 31, 2026", label: "Conference Date", desc: "Main event" }
   ]
 };
 
