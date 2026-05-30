@@ -4,6 +4,7 @@ import { Button } from "@/components/ui/button";
 import { ArrowRight, Calendar, MapPin, CheckCircle2, User, BookOpen, Scale, Globe, FileCheck2, ScrollText, Users } from "lucide-react";
 import navinImg from "@/assets/image.png";
 import pankajImg from "@/assets/WhatsApp Image 2026-05-29 at 11.21.06 AM.jpeg";
+import ganeshImg from "@/assets/image copy.png";
 
 const conferenceData = {
   id: "ICCEMB-26",
@@ -62,7 +63,9 @@ const conferenceData = {
     { name: "Pankaj Arora", org: "Healthcare Supply Chain Transformation Leader, Raleigh, North Carolina", country: "USA", img: pankajImg },
     { name: "Dr. Aida Mehrad", org: "C3S Business School", country: "Spain", img: "https://static.wixstatic.com/media/502b14_2f32591e100346daa035a4aaf27ef7d7~mv2.jpeg" },
     { name: "Dr. Walida Ounruean", org: "Uttaradit Rajabhat University", country: "Thailand", img: "https://static.wixstatic.com/media/30814e_73060115e6b34cb882286565559ff5e2~mv2.jpeg" },
-    { name: "Hemang Upadhyay", org: "AI, E-commerce & Analytics", country: "USA", img: "https://static.wixstatic.com/media/30814e_d8f3f76a4383421eb967c779a89ac17f~mv2.jpeg" }
+    { name: "Hemang Upadhyay", org: "AI, E-commerce & Analytics", country: "USA", img: "https://static.wixstatic.com/media/30814e_d8f3f76a4383421eb967c779a89ac17f~mv2.jpeg" },
+    { name: "Nadine Zeinoun", org: "ICF Ottawa", country: "Canada", img: "https://static.wixstatic.com/media/30814e_332bdfce1cc5480f975812b50be780a8~mv2.jpeg" },
+    { name: "Dr. Ganesh Hinge", org: "Principal, Navsahyadri Group of Institutes, College of Engineering", country: "India", img: ganeshImg }
   ],
   tracks: [
     "Computer Science",
@@ -76,7 +79,6 @@ const conferenceData = {
     { name: "Prof. Dr. Alexander Bull", org: "Germany", country: "Germany", img: "https://static.wixstatic.com/media/30814e_add55fc0895a4b0b9aebdd381f822484~mv2.jpeg" },
     { name: "Dr. Aida Mehrad", org: "C3S Business School", country: "Unknown", img: "https://static.wixstatic.com/media/502b14_2f32591e100346daa035a4aaf27ef7d7~mv2.jpeg" },
     { name: "Dr. Mehwish Rashid", org: "Keiser University, USA", country: "USA", img: "https://static.wixstatic.com/media/30814e_d030e1dbf7ef4028909beba2b99a69be~mv2.jpeg" },
-    { name: "Nadine Zeinoun", org: "ICF Ottawa", country: "Canada", img: "https://static.wixstatic.com/media/30814e_332bdfce1cc5480f975812b50be780a8~mv2.jpeg" },
     { name: "Ezinne Esther Arisa", org: "South Africa", country: "South Africa", img: "https://static.wixstatic.com/media/502b14_3adc2682f9064817b4728eca9cd4a0b1~mv2.jpeg" },
     { name: "Dr. Zoha Rahman", org: "USA", country: "USA", img: "https://static.wixstatic.com/media/30814e_2a893f0530e74f178c18e5939b687048~mv2.jpg" },
     { name: "Dr. Dina A. Alkhodary", org: "Jordan", country: "Jordan", img: "https://static.wixstatic.com/media/30814e_1feb45bda81f4dcdb4b55439a6f8d65a~mv2.jpg" },
@@ -256,10 +258,17 @@ const Iccemb26 = () => {
             <div key={idx} className="group flex flex-col items-center text-center">
               <div className="relative h-40 w-40 mb-6">
                 <div className="absolute inset-0 rounded-full bg-gradient-to-tr from-primary to-accent opacity-0 group-hover:opacity-100 transition-opacity duration-300 blur-md"></div>
-                <img src={s.img} alt={s.name} className="relative h-full w-full object-cover rounded-full border-4 border-background shadow-lg z-10" loading="lazy" />
+                {s.img ? (
+                  <img src={s.img} alt={s.name} className="relative h-full w-full object-cover rounded-full border-4 border-background shadow-lg z-10" loading="lazy" />
+                ) : (
+                  <div className="relative h-full w-full rounded-full border-4 border-background shadow-lg z-10 bg-muted flex items-center justify-center">
+                    <User className="h-12 w-12 text-muted-foreground" />
+                  </div>
+                )}
               </div>
               <h4 className="font-bold text-primary text-lg leading-tight mb-1">{s.name}</h4>
-              <p className="text-sm text-muted-foreground mb-2">{s.org}</p>
+              <p className="text-sm text-muted-foreground mb-1">{s.org}</p>
+              {s.country && <p className="text-xs font-semibold uppercase tracking-wider text-accent">{s.country}</p>}
             </div>
           ))}
         </div>
@@ -287,7 +296,8 @@ const Iccemb26 = () => {
                     )}
                   </div>
                   <h4 className="font-bold text-primary text-lg leading-tight mb-1">{d.name}</h4>
-                  <p className="text-sm text-muted-foreground mb-2">{d.org}</p>
+                  <p className="text-sm text-muted-foreground mb-1">{d.org}</p>
+                  {d.country && <p className="text-xs font-semibold uppercase tracking-wider text-accent">{d.country}</p>}
                 </div>
               ))}
             </div>
@@ -305,7 +315,7 @@ const Iccemb26 = () => {
           </a>
         </Button>
       </section>
-      <ConferenceSections conferenceName={conferenceData.id} glimpses={conferenceData.glimpses ?? []} importantDates={conferenceData.timeline} keynoteSpeakers={conferenceData.speakers} sessionChairs={conferenceData.sessionChairs} />
+      <ConferenceSections conferenceName={conferenceData.id} glimpses={conferenceData.glimpses ?? []} importantDates={conferenceData.timeline} sessionChairs={conferenceData.sessionChairs} />
 
     </div>
   );

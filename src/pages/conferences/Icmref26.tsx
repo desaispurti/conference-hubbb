@@ -416,7 +416,7 @@ const Icmref26 = () => {
           </div>
         </div>
       </section>
-      <ConferenceSections conferenceName={conferenceData.id} glimpses={conferenceData.glimpses ?? []} importantDates={conferenceData.timeline} keynoteSpeakers={[]} sessionChairs={conferenceData.sessionChairs} />
+      <ConferenceSections conferenceName={conferenceData.id} glimpses={conferenceData.glimpses ?? []} importantDates={conferenceData.timeline} sessionChairs={conferenceData.sessionChairs} />
 
     </div>
   );

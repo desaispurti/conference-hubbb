@@ -5,7 +5,6 @@ interface ConferenceSectionsProps {
   conferenceName: string;
   glimpses?: string[];
   importantDates?: { date: string; label: string; desc: string }[];
-  keynoteSpeakers?: { name: string; org?: string; country: string; img: string; desc?: string; role?: string }[];
   sessionChairs?: { name: string; org?: string; country: string; img: string; desc?: string; role?: string }[];
 }
 
@@ -74,7 +73,6 @@ export const ConferenceSections = ({
   conferenceName,
   glimpses = [], 
   importantDates = [], 
-  keynoteSpeakers = [], 
   sessionChairs = [] 
 }: ConferenceSectionsProps) => {
   return (
@@ -182,33 +180,7 @@ export const ConferenceSections = ({
         </div>
       </section>
 
-      {/* KEYNOTE SPEAKERS */}
-      {keynoteSpeakers && keynoteSpeakers.length > 0 && (
-        <section className="py-24 bg-background border-t border-white/5">
-          <div className="container">
-            <div className="text-center max-w-3xl mx-auto mb-16">
-              <h2 className="text-3xl md:text-5xl font-serif font-bold text-primary uppercase tracking-wider">
-                Invited Keynote Speakers
-              </h2>
-            </div>
-            <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
-              {keynoteSpeakers.map((s, idx) => (
-                <div key={idx} className="group flex flex-col items-center text-center p-6 rounded-2xl bg-card border border-white/5 hover:border-primary/30 transition-all hover:-translate-y-1">
-                  <div className="relative h-32 w-32 mb-6">
-                    <div className="absolute inset-0 rounded-full bg-gradient-to-tr from-primary to-accent opacity-0 group-hover:opacity-100 transition-opacity duration-300 blur-md"></div>
-                    <img src={s.img} alt={s.name} className="relative h-full w-full object-cover rounded-full border-4 border-background shadow-lg z-10" loading="lazy" />
-                  </div>
-                  <h4 className="font-bold text-white text-lg leading-tight mb-2">{s.name}</h4>
-                  <p className="text-xs font-bold text-accent uppercase tracking-wider flex items-center justify-center gap-1 mb-2">
-                    <Globe className="h-3 w-3" /> {s.country}
-                  </p>
-                  <p className="text-sm text-muted-foreground">{s.org || s.role}</p>
-                </div>
-              ))}
-            </div>
-          </div>
-        </section>
-      )}
+
 
       {/* SESSION CHAIRS */}
       {sessionChairs && sessionChairs.length > 0 && (
