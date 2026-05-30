@@ -50,15 +50,10 @@ const conferenceData = {
     }
   ],
   speakers: [
-    { name: "Dr. Tiansheng Yang", org: "University of South Wales, United Kingdom", country: "UK", img: "https://static.wixstatic.com/media/30814e_ab0670f34d354ffabafcaa2849d78701~mv2.jpg" },
     { name: "Aishwarya Tyagi", org: "10x Salesforce Certified, Global Process Analyst, Senior Solutions Consultant, San Francisco, USA", country: "USA", img: "https://static.wixstatic.com/media/30814e_9761c6907e784a2eaf242aa98ee4fb8c~mv2.jpg" },
-    { name: "Dr. Ayoub Regragui", org: "Mohammed V University, Morocco", country: "Morocco", img: "https://static.wixstatic.com/media/30814e_01571faffb8f491e9d9719a975bdbc88~mv2.avif" },
-    { name: "Dantouma KOITA", org: "Médecin, Mali", country: "Mali", img: "https://static.wixstatic.com/media/30814e_4b62d7369b30405eb03e742c4b987a21~mv2.jpg" },
     { name: "Dr. Marek Wasiluk", org: "Clinical Research Expert, Poland", country: "Poland", img: "https://static.wixstatic.com/media/30814e_adff5072ac724ad69a6f9634c9d672e0~mv2.jpg" },
     { name: "Dr. Shashi Bala Rai", org: "Panipat Institute of Engineering & Technology, Haryana", country: "India", img: "https://static.wixstatic.com/media/30814e_4be5926d8adc4e43bff352ea1ccb6c2a~mv2.jpeg" },
-    { name: "Dr. Vindhya Sathya Singh", org: "Sultan Qaboos University, Muscat, Oman", country: "Oman", img: "https://static.wixstatic.com/media/30814e_8eb90487810548c6ba5765e78ca79c99~mv2.jpeg" },
     { name: "HarshaTeja Vakanthula", org: "Sr. Technical Architect - Enterprise Cloud Services, RISE with SAP, Cloud ERP & Hyperscaler Strategy, USA", country: "USA", img: "https://static.wixstatic.com/media/30814e_9b1e02fa3fa44305b86bf422621791fc~mv2.jpg" },
-    { name: "Kateryna Antosz", org: "Rzeszow University of Technology, Poland", country: "Poland", img: "https://static.wixstatic.com/media/30814e_36d2bb3012e64343a18002662ca61e6b~mv2.avif" },
     { name: "Navin Kumar Chhibber", org: "AI/ML, GenAI and Data Platforms Leader, Product Engineering and Digital Transformation Expert, USA", country: "USA", img: navinImg },
     { name: "Pankaj Arora", org: "Healthcare Supply Chain Transformation Leader, Raleigh, North Carolina", country: "USA", img: pankajImg },
     { name: "Dr. Aida Mehrad", org: "C3S Business School", country: "Spain", img: "https://static.wixstatic.com/media/502b14_2f32591e100346daa035a4aaf27ef7d7~mv2.jpeg" },
@@ -242,6 +237,32 @@ const Iccemb26 = () => {
                 ))}
               </div>
             </div>
+          </div>
+        </div>
+      </section>
+
+      {/* DISTINGUISHED GUEST OF HONOR */}
+      <section className="container pt-24 pb-12">
+        <div className="text-center max-w-3xl mx-auto mb-16">
+          <h2 className="text-3xl md:text-5xl font-serif font-bold text-primary mb-6">Distinguished Guest of Honor</h2>
+          <p className="text-lg text-muted-foreground">Honorable Guest for ICCEMB-26.</p>
+        </div>
+        
+        <div className="flex justify-center">
+          <div className="group flex flex-col items-center text-center max-w-sm">
+            <div className="relative h-48 w-48 mb-6">
+              <div className="absolute inset-0 rounded-full bg-gradient-to-tr from-primary to-accent opacity-0 group-hover:opacity-100 transition-opacity duration-300 blur-md"></div>
+              <img 
+                src="https://static.wixstatic.com/media/30814e_bf66c69035bc4e41bc50c2345187c6f2~mv2.jpeg" 
+                alt="Dr. Jitendra Pandey, FHEA" 
+                className="relative h-full w-full object-cover rounded-full border-4 border-background shadow-lg z-10" 
+                loading="lazy" 
+              />
+            </div>
+            <h4 className="font-bold text-primary text-2xl leading-tight mb-2">Dr. Jitendra Pandey, FHEA</h4>
+            <p className="text-md text-muted-foreground mb-2 font-medium">Distinguished Guest of Honor</p>
+            <p className="text-sm text-muted-foreground">Technical Program Committee Chair | Senior Faculty Member, Middle East College</p>
+            <p className="text-xs font-semibold uppercase tracking-wider text-accent mt-2">Oman</p>
           </div>
         </div>
       </section>
