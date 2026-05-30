@@ -72,7 +72,7 @@ const conferenceData = {
   delegates: [
     { name: "Hicham El Khodja", org: "Researcher, Morocco", country: "Morocco", img: "https://static.wixstatic.com/media/30814e_d1c8c65f9d4d4bd59632c05aa894aa71~mv2.jpeg" },
     { name: "Prof. Dr. Alexander Bull", org: "Germany", country: "Germany", img: "https://static.wixstatic.com/media/30814e_add55fc0895a4b0b9aebdd381f822484~mv2.jpeg" },
-    { name: "Dr. Aida Mehrad", org: "C3S Business School", country: "Unknown", img: "https://static.wixstatic.com/media/502b14_2f32591e100346daa035a4aaf27ef7d7~mv2.jpeg" },
+    { name: "Dr. Aida Mehrad", org: "C3S Business School", country: "Spain", img: "https://static.wixstatic.com/media/502b14_2f32591e100346daa035a4aaf27ef7d7~mv2.jpeg" },
     { name: "Dr. Mehwish Rashid", org: "Keiser University, USA", country: "USA", img: "https://static.wixstatic.com/media/30814e_d030e1dbf7ef4028909beba2b99a69be~mv2.jpeg" },
     { name: "Ezinne Esther Arisa", org: "South Africa", country: "South Africa", img: "https://static.wixstatic.com/media/502b14_3adc2682f9064817b4728eca9cd4a0b1~mv2.jpeg" },
     { name: "Dr. Zoha Rahman", org: "USA", country: "USA", img: "https://static.wixstatic.com/media/30814e_2a893f0530e74f178c18e5939b687048~mv2.jpg" },
