@@ -42,6 +42,7 @@ const speakers = [
   { name: "Hicham ELKHOUAJA", role: "Researcher", location: "Morocco", image: "https://static.wixstatic.com/media/30814e_d1c8c65f9d4d4bd59632c05aa894aa71~mv2.jpeg" },
   { name: "Dr. Muhammad Tahir Jan", role: "Associate Professor", location: "Malaysia", image: "https://static.wixstatic.com/media/30814e_c8a29d72204a4175811ef562943091af~mv2.jpeg" },
   { name: "Mr. Rakesh Ramakrishna Pai", role: "Independent Researcher", location: "USA", image: "https://static.wixstatic.com/media/30814e_3885202ba5374de6b70a506164566564~mv2.jpeg" },
+  { name: "Nilesh Charankar", role: "AI Technology Leader and Independent Researcher", location: "USA", image: "https://static.wixstatic.com/media/30814e_70debe4180c34f9f83be4d5219c41358~mv2.jpeg" },
 ];
 
 const PastSpeakers = () => {

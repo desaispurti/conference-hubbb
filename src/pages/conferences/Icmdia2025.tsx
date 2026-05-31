@@ -20,7 +20,9 @@ const conferenceData = {
     { title: "Diverse Domains", desc: "Engineering, technology, management, environmental sciences, and AI." },
     { title: "Hybrid Mode", desc: "Attend in person in Helsinki, Finland or virtually from anywhere." }
   ],
-  speakers: [],
+  speakers: [
+    { name: "Nilesh Charankar", org: "AI Technology Leader and Independent Researcher", country: "USA", img: "https://static.wixstatic.com/media/30814e_70debe4180c34f9f83be4d5219c41358~mv2.jpeg" }
+  ],
   tracks: [
     "Engineering & Technology (AI, IoT, Cybersecurity, Smart Systems, Data Engineering)",
     "Business & Management (Digital transformation, sustainability strategies, and global trade)",
