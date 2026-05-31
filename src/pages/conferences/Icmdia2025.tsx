@@ -21,7 +21,18 @@ const conferenceData = {
     { title: "Hybrid Mode", desc: "Attend in person in Helsinki, Finland or virtually from anywhere." }
   ],
   speakers: [
-    { name: "Nilesh Charankar", org: "AI Technology Leader and Independent Researcher", country: "USA", img: "https://static.wixstatic.com/media/30814e_70debe4180c34f9f83be4d5219c41358~mv2.jpeg" }
+    { name: "Nilesh Charankar", org: "AI Technology Leader and Independent Researcher", country: "USA", img: "https://static.wixstatic.com/media/30814e_70debe4180c34f9f83be4d5219c41358~mv2.jpeg" },
+    { name: "Dr. Prodhan Mahbub Ibna Seraj", org: "Associate Professor", country: "Bangladesh", img: "https://static.wixstatic.com/media/30814e_e2e5efeee2d54b41bd193b968595b89b~mv2.jpeg" },
+    { name: "Dr. Nadia Adnan", org: "Prince Mohammad Bin Fahd University", country: "Saudi Arabia", img: "https://static.wixstatic.com/media/30814e_68479290bb114146b46b56f021a75155~mv2.png" },
+    { name: "Dr. Muhammad Tahir Jan", org: "Associate Professor", country: "Malaysia", img: "https://static.wixstatic.com/media/30814e_c8a29d72204a4175811ef562943091af~mv2.jpeg" },
+    { name: "Dr. Ayoub Regragui", org: "Mohammed V University, Rabat", country: "Morocco", img: "https://static.wixstatic.com/media/30814e_01571faffb8f491e9d9719a975bdbc88~mv2.avif" },
+    { name: "Veeramani Sampathkumar", org: "Fintech Technology Leader", country: "USA", img: "https://static.wixstatic.com/media/30814e_9166636afad548f9aab5e2b2d1b35e97~mv2.jpeg" },
+    { name: "Hicham ELKHOUAJA", org: "Researcher", country: "Morocco", img: "https://static.wixstatic.com/media/30814e_d1c8c65f9d4d4bd59632c05aa894aa71~mv2.jpeg" },
+    { name: "Mr. Rakesh Ramakrishna Pai", org: "Independent Researcher", country: "USA", img: "https://static.wixstatic.com/media/30814e_3885202ba5374de6b70a506164566564~mv2.jpeg" },
+    { name: "Jawaher Al-Zeidi", org: "English Language Lecturer", country: "Oman", img: "https://static.wixstatic.com/media/30814e_e23eb1bb3dab4126bc28ec5d56fc238f~mv2.jpg" },
+    { name: "Dr. Ratna Raja Kumar Jambi", org: "G S Moze College of Engineering", country: "India", img: "https://static.wixstatic.com/media/30814e_68b76caedcdf48b6988367c0c06ab3c8~mv2.jpeg" },
+    { name: "Yesha Patel", org: "Senior Solution Architect", country: "United States", img: "https://static.wixstatic.com/media/30814e_6354e00a70db405c823ee8721026e4f1~mv2.avif" },
+    { name: "Yukti Goyal", org: "Lead Software Engineer", country: "USA", img: "https://static.wixstatic.com/media/30814e_f4baaf1857454707a3b7c0c8e5e10963~mv2.avif" }
   ],
   tracks: [
     "Engineering & Technology (AI, IoT, Cybersecurity, Smart Systems, Data Engineering)",
