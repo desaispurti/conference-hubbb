@@ -53,7 +53,7 @@ const conferenceData = {
     { name: "Aishwarya Tyagi", org: "10x Salesforce Certified, Global Process Analyst, Senior Solutions Consultant, San Francisco, USA", country: "USA", img: "https://static.wixstatic.com/media/30814e_9761c6907e784a2eaf242aa98ee4fb8c~mv2.jpg" },
     { name: "Dr. Marek Wasiluk", org: "Clinical Research Expert, Poland", country: "Poland", img: "https://static.wixstatic.com/media/30814e_adff5072ac724ad69a6f9634c9d672e0~mv2.jpg" },
     { name: "Dr. Shashi Bala Rai", org: "Panipat Institute of Engineering & Technology, Haryana", country: "India", img: "https://static.wixstatic.com/media/30814e_4be5926d8adc4e43bff352ea1ccb6c2a~mv2.jpeg" },
-    { name: "HarshaTeja Vakanthula", org: "Sr. Technical Architect - Enterprise Cloud Services, RISE with SAP, Cloud ERP & Hyperscaler Strategy, USA", country: "USA", img: "https://static.wixstatic.com/media/30814e_9b1e02fa3fa44305b86bf422621791fc~mv2.jpg" },
+    { name: "Karan Kumar Ratra", org: "Retail Technology", country: "USA", img: "https://static.wixstatic.com/media/30814e_b013ae4c49494f099151f25bbffb92fe~mv2.jpeg" },
     { name: "Navin Kumar Chhibber", org: "AI/ML, GenAI and Data Platforms Leader, Product Engineering and Digital Transformation Expert, USA", country: "USA", img: navinImg },
     { name: "Pankaj Arora", org: "Healthcare Supply Chain Transformation Leader, Raleigh, North Carolina", country: "USA", img: pankajImg },
     { name: "Dr. Aida Mehrad", org: "C3S Business School", country: "Spain", img: "https://static.wixstatic.com/media/502b14_2f32591e100346daa035a4aaf27ef7d7~mv2.jpeg" },
