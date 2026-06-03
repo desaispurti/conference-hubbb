@@ -67,6 +67,14 @@ const conferenceData = {
     { date: "10 Mar 2026", label: "Final Paper", desc: "Final paper submission" },
     { date: "12 Mar 2026", label: "Registration", desc: "Registration deadline" },
     { date: "15 Mar 2026", label: "Conference Date", desc: "Virtual conference day" }
+  ],
+  glimpses: [
+    "https://static.wixstatic.com/media/30814e_33d4e51ec9b548869dc79ff1d169efaa~mv2.png",
+    "https://static.wixstatic.com/media/30814e_5e715a3196b14d579d140d5b3eb1ddca~mv2.png",
+    "https://static.wixstatic.com/media/30814e_93a8f9332aef4c4aa7fd4f0e49546811~mv2.png",
+    "https://static.wixstatic.com/media/30814e_a9f31589b453419d80070cb9359201c8~mv2.png",
+    "https://static.wixstatic.com/media/30814e_d86d730b88634ffd973c45f6ce16ebeb~mv2.png",
+    "https://static.wixstatic.com/media/30814e_d7cee65f8eb14561ad4ef13530292baa~mv2.png"
   ]
 };
 

@@ -73,7 +73,7 @@ export const upcomingConferences: Record<string, ConferenceData> = {
   "icmref-26": {
     id: "icmref-26",
     title: "International Conference on Multidisciplinary Research & Emerging Frontiers in AI, Software Systems & Emerging Technologies (ICMREF-26)",
-    date: "7 June 2026",
+    date: "5 July 2026",
     location: "Hybrid Mode | Nairobi, Kenya",
     collaboration: "IMFC KENYA",
     description: "ICMREF-26 is an international academic forum dedicated to advancing multidisciplinary research across emerging domains in Artificial Intelligence, Software Systems, and Advanced Technologies. The conference aims to provide a structured platform for researchers, academicians, and industry professionals to present original contributions, exchange technical insights, and explore collaborative opportunities.",
@@ -86,9 +86,9 @@ export const upcomingConferences: Record<string, ConferenceData> = {
       "Sustainable & Smart Systems (Green tech, smart infrastructure)"
     ],
     milestones: [
-      { name: "Paper Submission", date: "1 June 2026" },
-      { name: "Acceptance Notification", date: "5 June 2026" },
-      { name: "Final Submission", date: "6 June 2026" }
+      { name: "Paper Submission", date: "15 June 2026" },
+      { name: "Acceptance Notification", date: "22 June 2026" },
+      { name: "Final Submission", date: "28 June 2026" }
     ],
     speakers: [
       { name: "Dr. Ayoub Regragui", designation: "Technical Program Committee", university: "Mohammed V University, Morocco", image: "https://static.wixstatic.com/media/30814e_01571faffb8f491e9d9719a975bdbc88~mv2.avif" },
@@ -122,8 +122,8 @@ export const upcomingConferences: Record<string, ConferenceData> = {
   },
   "icaits-26": {
     id: "icaits-26",
-    title: "ICAESET-2026",
-    date: "14 June 2026",
+    title: "International Conference on Artificial Intelligence & Intelligent Technology Systems (ICAITS-26)",
+    date: "21 June 2026",
     location: "Global Participation",
     description: "A prestigious platform for discussing cutting-edge innovations in engineering systems and computing paradigms. It provides an interdisciplinary forum for sharing research findings and practical experiences. All submissions undergo a double-blind peer-review process, offering ISBN Proceedings and recommendations for Scopus/WoS indexed journals.",
     thematicTracks: [
@@ -136,15 +136,15 @@ export const upcomingConferences: Record<string, ConferenceData> = {
       "Cloud & Edge Computing"
     ],
     milestones: [
-      { name: "Paper Submission", date: "8 June 2026" },
-      { name: "Final Acceptance", date: "12 June 2026" },
-      { name: "Registration Deadline", date: "13 June 2026" }
+      { name: "Paper Submission", date: "27 May 2026" },
+      { name: "Final Acceptance", date: "4 June 2026" },
+      { name: "Registration Deadline", date: "12 June 2026" }
     ]
   },
   "icates-26": {
     id: "icates-26",
     title: "ICATES-26",
-    date: "14 June 2026",
+    date: "28 June 2026",
     location: "Hybrid Mode",
     description: "A premier platform exploring advancements in AI, engineering technologies, and intelligent systems. It focuses on the integration of AI with robotics, automation, and smart infrastructure. All submissions undergo a double-blind peer-review process, offering ISBN Proceedings and recommendations for Scopus/WoS indexed journals.",
     thematicTracks: [
@@ -156,9 +156,9 @@ export const upcomingConferences: Record<string, ConferenceData> = {
       "Cloud & Edge Computing"
     ],
     milestones: [
-      { name: "Paper Submission", date: "8 June 2026" },
-      { name: "Acceptance Notification", date: "12 June 2026" },
-      { name: "Final Submission", date: "13 June 2026" }
+      { name: "Paper Submission", date: "12 June 2026" },
+      { name: "Acceptance Notification", date: "19 June 2026" },
+      { name: "Final Submission", date: "25 June 2026" }
     ]
   }
 };

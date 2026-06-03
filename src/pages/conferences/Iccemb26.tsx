@@ -6,6 +6,31 @@ import navinImg from "@/assets/image.png";
 import pankajImg from "@/assets/WhatsApp Image 2026-05-29 at 11.21.06 AM.jpeg";
 import ganeshImg from "@/assets/image copy 2.png";
 
+import glimpse1 from "@/assets/WhatsApp Image 2026-06-03 at 6.41.34 AM.jpeg";
+import glimpse2 from "@/assets/WhatsApp Image 2026-06-03 at 6.41.35 AM (1).jpeg";
+import glimpse3 from "@/assets/WhatsApp Image 2026-06-03 at 6.41.35 AM (2).jpeg";
+import glimpse4 from "@/assets/WhatsApp Image 2026-06-03 at 6.41.35 AM.jpeg";
+import glimpse5 from "@/assets/WhatsApp Image 2026-06-03 at 6.41.54 AM (1).jpeg";
+import glimpse6 from "@/assets/WhatsApp Image 2026-06-03 at 6.41.54 AM.jpeg";
+import glimpse7 from "@/assets/WhatsApp Image 2026-06-03 at 6.41.55 AM (1).jpeg";
+import glimpse8 from "@/assets/WhatsApp Image 2026-06-03 at 6.41.55 AM (2).jpeg";
+import glimpse9 from "@/assets/WhatsApp Image 2026-06-03 at 6.41.55 AM (3).jpeg";
+import glimpse10 from "@/assets/WhatsApp Image 2026-06-03 at 6.41.55 AM.jpeg";
+import glimpse11 from "@/assets/WhatsApp Image 2026-06-03 at 7.22.47 PM.jpeg";
+import glimpse12 from "@/assets/WhatsApp Image 2026-06-03 at 7.22.48 PM (1).jpeg";
+import glimpse13 from "@/assets/WhatsApp Image 2026-06-03 at 7.22.48 PM (2).jpeg";
+import glimpse14 from "@/assets/WhatsApp Image 2026-06-03 at 7.22.48 PM.jpeg";
+import glimpse15 from "@/assets/WhatsApp Image 2026-06-03 at 7.22.49 PM.jpeg";
+import glimpse16 from "@/assets/WhatsApp Image 2026-06-03 at 7.24.41 PM (1).jpeg";
+import glimpse17 from "@/assets/WhatsApp Image 2026-06-03 at 7.24.41 PM.jpeg";
+import glimpse18 from "@/assets/WhatsApp Image 2026-06-03 at 7.24.42 PM (1).jpeg";
+import glimpse19 from "@/assets/WhatsApp Image 2026-06-03 at 7.24.42 PM (2).jpeg";
+import glimpse20 from "@/assets/WhatsApp Image 2026-06-03 at 7.24.42 PM.jpeg";
+import glimpse21 from "@/assets/WhatsApp Image 2026-06-03 at 7.24.43 PM (1).jpeg";
+import glimpse22 from "@/assets/WhatsApp Image 2026-06-03 at 7.24.43 PM.jpeg";
+import glimpse23 from "@/assets/WhatsApp Image 2026-06-03 at 7.42.43 AM.jpeg";
+import glimpse24 from "@/assets/WhatsApp Image 2026-06-03 at 7.42.44 AM.jpeg";
+
 const conferenceData = {
   id: "ICCEMB-26",
   title: "International Conference on Computer Science, Education, Medical and Business",
@@ -85,6 +110,12 @@ const conferenceData = {
     { date: "May 20, 2026", label: "Acceptance Notification", desc: "Notification of acceptance" },
     { date: "May 25, 2026", label: "Final Submission & Registration", desc: "Deadline" },
     { date: "May 31, 2026", label: "Conference Date", desc: "Main event" }
+  ],
+  glimpses: [
+    glimpse1, glimpse2, glimpse3, glimpse4, glimpse5, glimpse6,
+    glimpse7, glimpse8, glimpse9, glimpse10, glimpse11, glimpse12,
+    glimpse13, glimpse14, glimpse15, glimpse16, glimpse17, glimpse18,
+    glimpse19, glimpse20, glimpse21, glimpse22, glimpse23, glimpse24
   ]
 };
 

@@ -62,6 +62,22 @@ const conferenceData = {
     { date: "18 March 2026", label: "Acceptance Notification", desc: "Authors receive review results" },
     { date: "22 March 2026", label: "Final Paper Submission", desc: "Camera-ready paper deadline" },
     { date: "29 March 2026", label: "Conference Date", desc: "Virtual conference day" }
+  ],
+  glimpses: [
+    "https://static.wixstatic.com/media/30814e_e2ab8291c65443b08037daea7ef6a78d~mv2.jpeg",
+    "https://static.wixstatic.com/media/30814e_6a64ae4eab594e29acaa5124ade0d3f7~mv2.jpeg",
+    "https://static.wixstatic.com/media/30814e_d917132ef2df4159b65db1a83a1c9bc2~mv2.jpeg",
+    "https://static.wixstatic.com/media/30814e_91552c0f2ecb4d3ca64d3150790b5f6b~mv2.jpeg",
+    "https://static.wixstatic.com/media/30814e_9a7ec9347a0a41b799a175f951ce48fe~mv2.jpeg",
+    "https://static.wixstatic.com/media/30814e_f202f06835db41d88aa73f77f3c7b9de~mv2.jpeg",
+    "https://static.wixstatic.com/media/30814e_dc40a06ecd3044baa2cf785c5f8bfe1e~mv2.jpeg",
+    "https://static.wixstatic.com/media/30814e_174db642e9584aa784d19c461ae29bad~mv2.jpeg",
+    "https://static.wixstatic.com/media/30814e_be514a5a7b134873aec6cd5aa0de916f~mv2.jpeg",
+    "https://static.wixstatic.com/media/30814e_b9b43af3aa7e40768b779058320b59b9~mv2.jpeg",
+    "https://static.wixstatic.com/media/30814e_199d91bd8cb848539fc8f0e37c18b155~mv2.jpeg",
+    "https://static.wixstatic.com/media/30814e_f86882c18c1444b1a13616a827c6775f~mv2.jpeg",
+    "https://static.wixstatic.com/media/30814e_745ecb8123d14e4c9405418d54492332~mv2.jpeg",
+    "https://static.wixstatic.com/media/30814e_23a41863b4d346e4852747feb1e9f896~mv2.jpeg"
   ]
 };
 

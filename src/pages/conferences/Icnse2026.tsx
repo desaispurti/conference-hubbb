@@ -66,6 +66,16 @@ const conferenceData = {
     { date: "28 Feb 2026", label: "Final Paper", desc: "Camera-ready submission" },
     { date: "28 Feb 2026", label: "Registration", desc: "Registration deadline" },
     { date: "01 Mar 2026", label: "Conference Date", desc: "Virtual conference day" }
+  ],
+  glimpses: [
+    "https://static.wixstatic.com/media/502b14_a0dbb2f7139047a08a766656bd0f7454~mv2.png",
+    "https://static.wixstatic.com/media/502b14_9126573200ea4347ad45216bf5d5d0cc~mv2.png",
+    "https://static.wixstatic.com/media/502b14_09e44ae6e60446d5a50f320be751f625~mv2.png",
+    "https://static.wixstatic.com/media/502b14_3795a6d8c1e04913be8f9f278820b1f5~mv2.png",
+    "https://static.wixstatic.com/media/502b14_a1d2cd32d08743ca8aff3aef4fa76139~mv2.png",
+    "https://static.wixstatic.com/media/502b14_4314189cd9e44cd680613f130b26535f~mv2.png",
+    "https://static.wixstatic.com/media/502b14_2202fa7fa65c48fbb7c21fedceb02752~mv2.png",
+    "https://static.wixstatic.com/media/502b14_21b36ee9a54e4019ad6c50441ba55b96~mv2.png"
   ]
 };
 

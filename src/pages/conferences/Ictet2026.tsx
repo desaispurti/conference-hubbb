@@ -58,6 +58,19 @@ const conferenceData = {
     { date: "25 Jan 2026", label: "Acceptance Notice", desc: "Notification of acceptance" },
     { date: "05 Feb 2026", label: "Registration", desc: "Final registration deadline" },
     { date: "15 Feb 2026", label: "Conference Date", desc: "Hybrid conference day" }
+  ],
+  glimpses: [
+    "https://static.wixstatic.com/media/502b14_edb34fd966bd47828bf664f663abdbf9~mv2.png",
+    "https://static.wixstatic.com/media/502b14_219e55d10fce4c84a137a2237cee8ea9~mv2.png",
+    "https://static.wixstatic.com/media/502b14_2eaed030e42b41cd83cd53cdfd2e7c08~mv2.png",
+    "https://static.wixstatic.com/media/502b14_60fdae1f90e94ac9bc4c901d9d3fab98~mv2.png",
+    "https://static.wixstatic.com/media/502b14_ec71360407204e648fac1ff35d41c712~mv2.png",
+    "https://static.wixstatic.com/media/502b14_c5b24e50b1a04652a81e622dfbc4101f~mv2.png",
+    "https://static.wixstatic.com/media/502b14_0d1fcbd0b5824e94ac5ff878f38b3d15~mv2.png",
+    "https://static.wixstatic.com/media/502b14_1ed526bb46584faba5572a59d62cc05c~mv2.png",
+    "https://static.wixstatic.com/media/502b14_46cb554fd614451f977bb8e91e7ff44e~mv2.png",
+    "https://static.wixstatic.com/media/502b14_8d85b964b4aa4760a4372158c98302bb~mv2.png",
+    "https://static.wixstatic.com/media/502b14_a16af0a1732a45fcac7ecb2cd354d5c7~mv2.png"
   ]
 };
 
