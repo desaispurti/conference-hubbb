@@ -29,7 +29,7 @@ export interface ProceedingData {
   description: string;
   downloadLink?: string;
   abstractLink?: string;
-  videos?: string[];
+  videos?: (string | { url: string; speaker?: string; title?: string })[];
   papers?: { title: string; authors: string; pdfLink: string; }[];
 }
 
@@ -170,18 +170,18 @@ export const proceedings: Record<string, ProceedingData> = {
     date: "2026",
     description: "Official proceedings from the International Conference on Computer Science, Education, Medical and Business (ICCEMB-26).",
     videos: [
-      "https://youtu.be/YvStQzCwJu0",
-      "https://youtu.be/jOqUqje9u4Y",
-      "https://youtu.be/hFJAwML-wOg",
-      "https://youtu.be/twORFj05SmY",
-      "https://youtu.be/fT3-4J49wyo",
-      "https://youtu.be/_lRKU-kWXrk",
-      "https://youtu.be/tohOP6Haq3I",
-      "https://youtu.be/2rPpVN4eixk",
-      "https://youtu.be/ZG568Lr4Njs",
-      "https://youtu.be/TZo9LyI9Gcw",
-      "https://youtu.be/8nyv0CqSCTo",
-      "https://youtu.be/oJXkP4vankk"
+      { url: "https://youtu.be/YvStQzCwJu0", speaker: "Dr. Aida Mehrad", title: "Organizational Change Management in the Digital Age" },
+      { url: "https://youtu.be/jOqUqje9u4Y", speaker: "Prof. Dr. G. A. Hinge", title: "Keynote Presentation" },
+      { url: "https://youtu.be/hFJAwML-wOg", speaker: "Amit Kukker", title: "Keynote Presentation" },
+      { url: "https://youtu.be/twORFj05SmY", speaker: "Dr. Marek Wasiluk", title: "AI in Medical Science" },
+      { url: "https://youtu.be/fT3-4J49wyo", speaker: "Nadine Zeinoun", title: "Emotional Intelligence" },
+      { url: "https://youtu.be/_lRKU-kWXrk", speaker: "Navin Kumar Chhibber", title: "Getting Ready for Post-Quantum Security" },
+      { url: "https://youtu.be/tohOP6Haq3I", speaker: "Pankaj Arora", title: "Garbage In, Failure Out" },
+      { url: "https://youtu.be/2rPpVN4eixk", speaker: "Dr. Shashi Bala Rai", title: "Use of AI in Teaching & Research" },
+      { url: "https://youtu.be/ZG568Lr4Njs", speaker: "Aishwarya Tyagi", title: "Salesforce Innovation and Process Excellence" },
+      { url: "https://youtu.be/TZo9LyI9Gcw", speaker: "Dr. Walida Ounruean", title: "Differentiated Instructions" },
+      { url: "https://youtu.be/8nyv0CqSCTo", speaker: "Karan Kumar Ratra", title: "System-Triggered Customer Self-Remediation" },
+      { url: "https://youtu.be/oJXkP4vankk", speaker: "Dr. Jitendra Pandey", title: "Opening Address" }
     ]
   },
   "copy-of-proceeding-icaeset-2026-26": {

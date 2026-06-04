@@ -149,19 +149,32 @@ const ProceedingDetail = () => {
             </div>
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
               {data.videos.map((vid, i) => {
-                const videoId = getYouTubeVideoId(vid);
+                const isObject = typeof vid === "object" && vid !== null;
+                const videoUrl = isObject ? vid.url : vid;
+                const speakerName = isObject ? vid.speaker : undefined;
+                const videoTitle = isObject ? vid.title : undefined;
+
+                const videoId = getYouTubeVideoId(videoUrl);
                 if (!videoId) return null;
 
                 return (
-                  <div key={i} className="rounded-2xl overflow-hidden shadow-elegant bg-card group relative aspect-video border border-border/50 hover:shadow-lg transition-all">
-                    <iframe
-                      className="w-full h-full absolute inset-0"
-                      src={`https://www.youtube.com/embed/${videoId}?rel=0`}
-                      title={`Conference Video ${i+1}`}
-                      frameBorder="0"
-                      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                      allowFullScreen
-                    />
+                  <div key={i} className="flex flex-col gap-4">
+                    <div className="rounded-2xl overflow-hidden shadow-elegant bg-card group relative aspect-video border border-border/50 hover:shadow-lg transition-all">
+                      <iframe
+                        className="w-full h-full absolute inset-0"
+                        src={`https://www.youtube.com/embed/${videoId}?rel=0`}
+                        title={videoTitle || `Conference Video ${i+1}`}
+                        frameBorder="0"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                        allowFullScreen
+                      />
+                    </div>
+                    {(speakerName || videoTitle) && (
+                      <div className="px-1">
+                        {speakerName && <p className="font-bold text-white text-base leading-tight">{speakerName}</p>}
+                        {videoTitle && <p className="text-sm text-muted-foreground mt-1 leading-normal">{videoTitle}</p>}
+                      </div>
+                    )}
                   </div>
                 );
               })}
