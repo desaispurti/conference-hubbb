@@ -164,6 +164,26 @@ export const upcomingConferences: Record<string, ConferenceData> = {
 };
 
 export const proceedings: Record<string, ProceedingData> = {
+  "iccemb-26": {
+    id: "iccemb-26",
+    title: "Proceeding ICCEMB-26",
+    date: "2026",
+    description: "Official proceedings from the International Conference on Computer Science, Education, Medical and Business (ICCEMB-26).",
+    videos: [
+      "https://youtu.be/YvStQzCwJu0",
+      "https://youtu.be/jOqUqje9u4Y",
+      "https://youtu.be/hFJAwML-wOg",
+      "https://youtu.be/twORFj05SmY",
+      "https://youtu.be/fT3-4J49wyo",
+      "https://youtu.be/_lRKU-kWXrk",
+      "https://youtu.be/tohOP6Haq3I",
+      "https://youtu.be/2rPpVN4eixk",
+      "https://youtu.be/ZG568Lr4Njs",
+      "https://youtu.be/TZo9LyI9Gcw",
+      "https://youtu.be/8nyv0CqSCTo",
+      "https://youtu.be/oJXkP4vankk"
+    ]
+  },
   "copy-of-proceeding-icaeset-2026-26": {
     id: "copy-of-proceeding-icaeset-2026-26",
     title: "Proceeding ICAIDSS-2026",

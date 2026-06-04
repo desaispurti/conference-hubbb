@@ -1,6 +1,7 @@
 import { Card } from "@/components/ui/card";
 import ConferenceSections from "@/components/layout/ConferenceSections";
 import { Button } from "@/components/ui/button";
+import { Link } from "react-router-dom";
 import { ArrowRight, Calendar, MapPin, CheckCircle2, User, BookOpen, Scale, Globe, FileCheck2, ScrollText, Users } from "lucide-react";
 import navinImg from "@/assets/image.png";
 import pankajImg from "@/assets/WhatsApp Image 2026-05-29 at 11.21.06 AM.jpeg";
@@ -129,7 +130,7 @@ const Iccemb26 = () => {
           <div className="max-w-4xl">
             <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-gradient-to-r from-accent/20 to-accent/40 text-accent font-medium text-sm mb-8 backdrop-blur-md border border-accent/30">
               <span className="relative flex h-2 w-2"><span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-accent opacity-75"></span><span className="relative inline-flex rounded-full h-2 w-2 bg-accent"></span></span>
-              {conferenceData.id} • Upcoming Conference
+              {conferenceData.id} • Proceedings Live
             </div>
             <h1 className="text-4xl md:text-6xl font-serif font-bold text-foreground leading-tight mb-6">
               {conferenceData.title}
@@ -146,11 +147,18 @@ const Iccemb26 = () => {
               </div>
             </div>
 
-            <Button asChild variant="hero" size="lg" className="rounded-full shadow-xl">
-              <a href={conferenceData.registrationLink} target="_blank" rel="noreferrer">
-                Register Now <ArrowRight className="ml-2 h-5 w-5" />
-              </a>
-            </Button>
+            <div className="flex flex-wrap gap-4">
+              <Button asChild variant="hero" size="lg" className="rounded-full shadow-xl">
+                <Link to="/recent-proceedings/iccemb-26">
+                  View Proceedings <ArrowRight className="ml-2 h-5 w-5" />
+                </Link>
+              </Button>
+              <Button asChild variant="outline" size="lg" className="rounded-full shadow-xl bg-background/10 backdrop-blur-md border-primary-foreground/20 text-white hover:bg-background/20 hover:text-white">
+                <a href={conferenceData.registrationLink} target="_blank" rel="noreferrer">
+                  Registration Info
+                </a>
+              </Button>
+            </div>
           </div>
         </div>
       </section>
@@ -357,15 +365,21 @@ const Iccemb26 = () => {
         </div>
       </section>
 
-      {/* CALL TO ACTION */}
+      {/* PROCEEDINGS BANNER */}
       <section className="container py-20 text-center">
-        <h2 className="text-3xl font-serif font-bold text-primary mb-4">Join ICCEMB-26 – Advance Global Research</h2>
-        <p className="text-lg text-muted-foreground mb-8">Be part of a global academic platform.</p>
-        <Button asChild size="lg" className="rounded-full shadow-xl">
-          <a href={conferenceData.registrationLink} target="_blank" rel="noreferrer">
-            Register Now
-          </a>
-        </Button>
+        <div className="max-w-4xl mx-auto bg-primary/10 p-12 rounded-3xl backdrop-blur-sm border border-primary/30 shadow-2xl">
+          <h2 className="text-3xl md:text-4xl font-serif font-bold text-primary mb-6">
+            Official ICCEMB-26 Conference Proceedings
+          </h2>
+          <p className="text-lg text-muted-foreground mb-8 leading-relaxed">
+            The proceedings of the International Conference on Computer Science, Education, Medical and Business (ICCEMB-26) are now officially available. Explore peer-reviewed research papers and keynote video presentations.
+          </p>
+          <Button asChild size="lg" className="rounded-full shadow-xl">
+            <Link to="/recent-proceedings/iccemb-26">
+              View Conference Proceedings <ArrowRight className="ml-2 h-5 w-5" />
+            </Link>
+          </Button>
+        </div>
       </section>
       <ConferenceSections conferenceName={conferenceData.id} glimpses={conferenceData.glimpses ?? []} importantDates={conferenceData.timeline} sessionChairs={conferenceData.sessionChairs} />
 
