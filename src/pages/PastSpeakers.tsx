@@ -1,5 +1,6 @@
 import ganeshImg from "@/assets/image copy 2.png";
 import pankajImg from "@/assets/WhatsApp Image 2026-05-29 at 11.21.06 AM.jpeg";
+import navinImg from "@/assets/navin.png";
 import { PageHero } from "@/components/layout/PageHero";
 import { Card } from "@/components/ui/card";
 import { Globe, MapPin, Quote, Sparkles, Mic, Presentation, ArrowRight } from "lucide-react";
@@ -64,7 +65,7 @@ const speakers = [
   { name: "Dr. Muhammad Tahir Jan", role: "Associate Professor", location: "Malaysia", image: "https://static.wixstatic.com/media/30814e_c8a29d72204a4175811ef562943091af~mv2.jpeg" },
   { name: "Dr. Nadia Adnan", role: "Assistant Professor & Research Scientist", location: "Saudi Arabia", image: "https://static.wixstatic.com/media/30814e_68479290bb114146b46b56f021a75155~mv2.png" },
   { name: "Nadine Zeinoun", role: "President, ICF Chapter Ottawa", location: "Lebanon", image: "https://static.wixstatic.com/media/30814e_332bdfce1cc5480f975812b50be780a8~mv2.jpeg" },
-  { name: "Navin Kumar Chhibber", role: "AI/ML, GenAI and Data Platforms Leader, Product Engineering and Digital Transformation Expert, USA", location: "USA", image: "https://static.wixstatic.com/media/30814e_9761c6907e784a2eaf242aa98ee4fb8c~mv2.jpg" },
+  { name: "Navin Kumar Chhibber", role: "AI/ML, GenAI and Data Platforms Leader, Product Engineering and Digital Transformation Expert, USA", location: "USA", image: navinImg },
   { name: "Prof. Neha Singh", role: "Assistant Professor", location: "India", image: "https://static.wixstatic.com/media/30814e_f258ef8fd1a74b9b9c778f12bcdc9128~mv2.jpeg" },
   { name: "Nikola Ilić", role: "Assistant Professor", location: "Serbia", image: "https://static.wixstatic.com/media/30814e_cf46fb74cc9446b287ec144125a1c54e~mv2.jpeg" },
   { name: "Nilesh Charankar", role: "AI Technology Leader and Independent Researcher", location: "USA", image: "https://static.wixstatic.com/media/30814e_70debe4180c34f9f83be4d5219c41358~mv2.jpeg" },

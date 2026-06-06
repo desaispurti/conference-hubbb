@@ -1,6 +1,7 @@
 import { PageHero } from "@/components/layout/PageHero";
 import { Card } from "@/components/ui/card";
 import { Globe } from "lucide-react";
+import navinImg from "@/assets/navin.png";
 
 // Removing duplicates from the provided data
 const advisoryMembers = [
@@ -35,7 +36,8 @@ const advisoryMembers = [
   { name: "Anup Gupta", role: "Associate Director – Digital Transformation Leader", location: "North Carolina, USA", image: "https://static.wixstatic.com/media/30814e_916aabc5c238468882d8066892ff6a27~mv2.jpg" },
   { name: "Nandan Sharma", role: "Information Security Leader, BC Public Service", location: "Canada / USA", image: "https://static.wixstatic.com/media/30814e_3cdb660543a146ab81e18da144efabad~mv2.jpg" },
   { name: "Prof. Dr. Alexander Bull", role: "Faculty of Business Administration, IU International University of Applied Sciences", location: "Germany", image: "https://static.wixstatic.com/media/30814e_add55fc0895a4b0b9aebdd381f822484~mv2.jpeg" },
-  { name: "Hemang Upadhyay", role: "Independent Researcher, AI, E-commerce & Analytics", location: "USA", image: "https://static.wixstatic.com/media/30814e_d8f3f76a4383421eb967c779a89ac17f~mv2.jpeg" }
+  { name: "Hemang Upadhyay", role: "Independent Researcher, AI, E-commerce & Analytics", location: "USA", image: "https://static.wixstatic.com/media/30814e_d8f3f76a4383421eb967c779a89ac17f~mv2.jpeg" },
+  { name: "Navin Kumar Chhibber", role: "AI/ML, GenAI and Data Platforms Leader, Product Engineering and Digital Transformation Expert", location: "USA", image: navinImg }
 ];
 
 const AdvisoryMembers = () => (

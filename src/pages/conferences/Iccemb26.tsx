@@ -3,7 +3,7 @@ import ConferenceSections from "@/components/layout/ConferenceSections";
 import { Button } from "@/components/ui/button";
 import { Link } from "react-router-dom";
 import { ArrowRight, Calendar, MapPin, CheckCircle2, User, BookOpen, Scale, Globe, FileCheck2, ScrollText, Users } from "lucide-react";
-import navinImg from "@/assets/image.png";
+import navinImg from "@/assets/navin.png";
 import pankajImg from "@/assets/WhatsApp Image 2026-05-29 at 11.21.06 AM.jpeg";
 import ganeshImg from "@/assets/image copy 2.png";
 
